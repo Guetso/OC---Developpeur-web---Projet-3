@@ -1,18 +1,17 @@
-body{
-    margin: 0;
-    height: 100vh;
-}
-
-#bloc_page{
+body {
+  margin: 0;
+  height: 100vh;
+  #bloc_page {
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+  }
+  a {
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
 }
 
-a{
-    display: block;
-    color:black;
-    text-decoration: none;
-}
-//le site étant avant tout destiné à un usage mobile / tactile, tous les liens seront des blocs plus facile à atteindre d'un doight
+//le site étant avant tout destiné à un usage mobile / tactile, tous les liens seront des blocs plus faciles à atteindre d'un doigt

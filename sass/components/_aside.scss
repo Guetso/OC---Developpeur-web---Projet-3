@@ -1,0 +1,13 @@
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soon{
+    text-align: center;
+    background-color: $prim-color;
+    color: $secon-color;
+    width: 30vh;
+    height: 5vh;
+}

@@ -1,11 +1,13 @@
-//@import "./utils" ; 
-    //variables
-    //functions
-    //mixins
+@import "./utils/variables" ;
+//variables
+//functions
+//mixins
 @import "./base/base";
-//@import "./components/";
-    //blocs BEM indépendants
+@import "./base/typography";
+@import "./components/aside";
+//blocs BEM indépendants
 @import "./layouts/header";
 @import "./layouts/footer";
-    //blocs BEM réutilisables
+@import "./layouts/sectionp";
+//blocs BEM réutilisables
 @import "./pages/acceuil";
