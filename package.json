@@ -1,0 +1,19 @@
+{
+  "name": "p3_hemon_hugo",
+  "version": "1.0.0",
+  "description": "Projet 3 OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guetso/P3_hemon_hugo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guetso/P3_hemon_hugo/issues"
+  },
+  "homepage": "https://github.com/Guetso/P3_hemon_hugo#readme"
+}
