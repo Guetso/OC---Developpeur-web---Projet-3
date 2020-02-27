@@ -4,5 +4,8 @@
     //mixins
 @import "./base/base";
 //@import "./components/";
-//@import "./layouts/";
-//@import "./pages/";
+    //blocs BEM indépendants
+@import "./layouts/header";
+@import "./layouts/footer";
+    //blocs BEM réutilisables
+@import "./pages/acceuil";
