@@ -1,0 +1,16 @@
+.menu {
+  a {
+    padding-top: 33%;
+    padding-bottom: 33%;
+  }
+  @for $i from 1 through $num-menu {
+    &-#{$i} {
+      height: 31vh;
+      width: 22vh;
+      margin: 3vh 1vh 0 1vh;
+      border: solid 1px;
+      text-align: center;
+      display: flex;
+    }
+  }
+}

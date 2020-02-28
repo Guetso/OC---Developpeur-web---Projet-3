@@ -5,16 +5,4 @@
   padding-left: 3vh;
   padding-right: 3vh;
   margin-top: -4vh; //Ne peut on pas faire autrement pour réduire les marges entre élément positionnés en space-around ?
-  .menu {
-    height: 31vh;
-    width: 22vh;
-    margin: 3vh 1vh 0 1vh;
-    border: solid 1px;
-    text-align: center;
-    display: flex;
-    a{
-      padding-top: 33%;
-      padding-bottom: 33%;
-    }
-  }
 }
