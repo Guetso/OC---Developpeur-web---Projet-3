@@ -108,24 +108,28 @@ header a {
 }
 
 footer {
-  background-color: #579c87;
-  color: #fbcb4e;
   text-align: center;
   display: flex;
   justify-content: space-between;
+  justify-self: flex-end;
   align-items: center;
+  overflow: hidden;
+  background-color: #579c87;
+  color: #fbcb4e;
   min-height: 5.5vh;
   padding-left: 1.5vh;
   padding-right: 1.5vh;
-  justify-self: flex-end;
 }
-footer a {
+footer div {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fbcb4e;
   height: 100%;
-  border: solid 1px;
+}
+
+.legals a, .contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbcb4e;
 }
 
 #section_menu {

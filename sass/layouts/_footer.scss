@@ -1,21 +1,25 @@
 footer {
-  background-color: $prim-color;
-  color: $secon-color;
   text-align: center;
   display: flex;
   justify-content: space-between;
+  justify-self: flex-end;
   align-items: center;
+  overflow: hidden;
+  background-color: $prim-color;
+  color: $secon-color;
   min-height: 5.5vh;
   padding-left: 1.5vh;
   padding-right: 1.5vh;
-  justify-self: flex-end;
-  a {
-    
+  div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $secon-color;
     height: 100%;
-    border: solid 1px;
+  }
+}
+.legals, .contact{
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $secon-color;
   }
 }
