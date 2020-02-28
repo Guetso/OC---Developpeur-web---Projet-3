@@ -5,9 +5,12 @@ aside{
 }
 
 .soon{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $prim-color;
     color: $secon-color;
-    width: 30vh;
+    width: 26vh;
     height: 5vh;
+    border-radius: 0.5rem;
 }

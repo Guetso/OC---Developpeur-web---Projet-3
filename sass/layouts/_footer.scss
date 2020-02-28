@@ -2,6 +2,13 @@ footer {
   background-color: $prim-color;
   color: $secon-color;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.5vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+  justify-self: flex-end;
   a {
     color: $secon-color;
   }

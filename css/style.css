@@ -23,8 +23,14 @@ header {
 
 aside {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.1rem;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif, Arial, Helvetica;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 aside {
@@ -34,17 +40,23 @@ aside {
 }
 
 .soon {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #579c87;
   color: #fbcb4e;
-  width: 30vh;
+  width: 26vh;
   height: 5vh;
+  border-radius: 0.5rem;
 }
 
 header {
   background-color: #579c87;
   color: #fbcb4e;
-  text-align: center;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header a {
   color: #fbcb4e;
@@ -54,6 +66,13 @@ footer {
   background-color: #579c87;
   color: #fbcb4e;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.5vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+  justify-self: flex-end;
 }
 footer a {
   color: #fbcb4e;
@@ -61,18 +80,23 @@ footer a {
 
 #section_menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
-  margin-top: 1vh;
-  margin-bottom: 0;
   padding-left: 3vh;
   padding-right: 3vh;
-  border: solid 1px;
+  margin-top: -4vh;
 }
 #section_menu .menu {
   height: 31vh;
   width: 22vh;
+  margin: 3vh 1vh 0 1vh;
   border: solid 1px;
+  text-align: center;
+  display: flex;
+}
+#section_menu .menu a {
+  padding-top: 33%;
+  padding-bottom: 33%;
 }
 
 .titre_menu {
