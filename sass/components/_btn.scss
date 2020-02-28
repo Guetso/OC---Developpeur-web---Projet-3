@@ -1,12 +1,13 @@
-.soon {
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   background-color: $prim-color;
   color: $secon-color;
-  width: 26vh;
-  height: 5vh;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+  width: 185px;
+  height: 35px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   border-radius: 0.5rem;
 }

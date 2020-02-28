@@ -20,7 +20,7 @@ header {
   letter-spacing: -0.2rem;
 }
 
-aside {
+.btn {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
   font-weight: 400;
   font-size: 1.1rem;
@@ -32,16 +32,17 @@ footer {
   font-size: 1rem;
 }
 
-.soon {
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   background-color: #579c87;
   color: #fbcb4e;
-  width: 26vh;
-  height: 5vh;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+  width: 185px;
+  height: 35px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   border-radius: 0.5rem;
 }
 
@@ -153,6 +154,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
