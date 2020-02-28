@@ -1,13 +1,13 @@
 @mixin menu($num-menu, $num-bg-menu) {
-    .menu {
-      &-#{$num-menu} {
-        height: 31vh;
-        width: 22vh;
-        margin: 3vh 1vh 0 1vh;
-        border: solid 1px;
-        text-align: center;
-        display: flex;
-        background-color: map-get($map:$bg-menu, $key:$num-bg-menu)
-      }
+  .menu {
+    &-#{$num-menu} {
+      height: 31vh;
+      width: 22vh;
+      margin: 3vh 1vh 1vh 1vh;
+      border: solid 1px;
+      text-align: center;
+      display: flex;
+      background-color: map-get($map: $bg-menu, $key: $num-bg-menu);
     }
   }
+}

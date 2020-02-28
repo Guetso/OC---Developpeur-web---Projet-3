@@ -1,16 +1,12 @@
-aside{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.soon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $prim-color;
-    color: $secon-color;
-    width: 26vh;
-    height: 5vh;
-    border-radius: 0.5rem;
+.soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $prim-color;
+  color: $secon-color;
+  width: 26vh;
+  height: 5vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  border-radius: 0.5rem;
 }

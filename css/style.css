@@ -33,12 +33,6 @@ footer {
   font-size: 0.9rem;
 }
 
-aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .soon {
   display: flex;
   justify-content: center;
@@ -47,13 +41,15 @@ aside {
   color: #fbcb4e;
   width: 26vh;
   height: 5vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
   border-radius: 0.5rem;
 }
 
 .menu-1 {
   height: 31vh;
   width: 22vh;
-  margin: 3vh 1vh 0 1vh;
+  margin: 3vh 1vh 1vh 1vh;
   border: solid 1px;
   text-align: center;
   display: flex;
@@ -63,7 +59,7 @@ aside {
 .menu-2 {
   height: 31vh;
   width: 22vh;
-  margin: 3vh 1vh 0 1vh;
+  margin: 3vh 1vh 1vh 1vh;
   border: solid 1px;
   text-align: center;
   display: flex;
@@ -73,7 +69,7 @@ aside {
 .menu-3 {
   height: 31vh;
   width: 22vh;
-  margin: 3vh 1vh 0 1vh;
+  margin: 3vh 1vh 1vh 1vh;
   border: solid 1px;
   text-align: center;
   display: flex;
@@ -83,7 +79,7 @@ aside {
 .menu-4 {
   height: 31vh;
   width: 22vh;
-  margin: 3vh 1vh 0 1vh;
+  margin: 3vh 1vh 1vh 1vh;
   border: solid 1px;
   text-align: center;
   display: flex;
@@ -93,7 +89,7 @@ aside {
 .menu-5 {
   height: 31vh;
   width: 22vh;
-  margin: 3vh 1vh 0 1vh;
+  margin: 3vh 1vh 1vh 1vh;
   border: solid 1px;
   text-align: center;
   display: flex;
@@ -103,7 +99,7 @@ aside {
 header {
   background-color: #579c87;
   color: #fbcb4e;
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,7 +115,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5.5vh;
+  min-height: 5.5vh;
   padding-left: 1.5vh;
   padding-right: 1.5vh;
   justify-self: flex-end;
@@ -129,7 +125,6 @@ footer a {
 }
 
 #section_menu {
-  border: 2px solid;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -144,6 +139,12 @@ footer a {
 .menu a {
   padding-top: 33%;
   padding-bottom: 33%;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
