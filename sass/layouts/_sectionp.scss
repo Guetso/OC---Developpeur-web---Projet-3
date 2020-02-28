@@ -1,8 +1,9 @@
 #section_menu {
+  border: 2px solid;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   padding-left: 3vh;
   padding-right: 3vh;
-  margin-top: -4vh; //Ne peut on pas faire autrement pour réduire les marges entre élément positionnés en space-around ?
+   //Ne peut on pas faire autrement pour réduire les marges entre élément positionnés en space-around ?
 }
