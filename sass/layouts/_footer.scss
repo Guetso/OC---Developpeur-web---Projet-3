@@ -10,6 +10,12 @@ footer {
   padding-right: 1.5vh;
   justify-self: flex-end;
   a {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $secon-color;
+    height: 100%;
+    border: solid 1px;
   }
 }

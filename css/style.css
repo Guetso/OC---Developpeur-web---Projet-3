@@ -9,7 +9,6 @@ body #bloc_page {
   justify-content: space-between;
 }
 body a {
-  display: block;
   color: black;
   text-decoration: none;
 }
@@ -30,7 +29,7 @@ aside {
 footer {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .soon {
@@ -53,7 +52,7 @@ footer {
   border: solid 1px;
   text-align: center;
   display: flex;
-  background-color: red;
+  background-color: #fcdfdb;
 }
 
 .menu-2 {
@@ -63,7 +62,7 @@ footer {
   border: solid 1px;
   text-align: center;
   display: flex;
-  background-color: blue;
+  background-color: #fff5fe;
 }
 
 .menu-3 {
@@ -73,7 +72,7 @@ footer {
   border: solid 1px;
   text-align: center;
   display: flex;
-  background-color: yellow;
+  background-color: #f9f9f9;
 }
 
 .menu-4 {
@@ -83,28 +82,28 @@ footer {
   border: solid 1px;
   text-align: center;
   display: flex;
-  background-color: pink;
-}
-
-.menu-5 {
-  height: 31vh;
-  width: 22vh;
-  margin: 3vh 1vh 1vh 1vh;
-  border: solid 1px;
-  text-align: center;
-  display: flex;
-  background-color: green;
+  background-color: #fdfffc;
 }
 
 header {
+  display: flex;
+  overflow: hidden;
   background-color: #579c87;
   color: #fbcb4e;
   min-height: 10vh;
+}
+header h1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   color: #fbcb4e;
 }
 
@@ -121,7 +120,12 @@ footer {
   justify-self: flex-end;
 }
 footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fbcb4e;
+  height: 100%;
+  border: solid 1px;
 }
 
 #section_menu {

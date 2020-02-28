@@ -1,3 +1,4 @@
+//Design des menus
 @mixin menu($num-menu, $num-bg-menu) {
   .menu {
     &-#{$num-menu} {

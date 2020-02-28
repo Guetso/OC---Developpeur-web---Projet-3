@@ -1,10 +1,15 @@
 $prim-color: #579c87;
 $secon-color: #fbcb4e;
-$num-menu: (1 2 3 4 5);
+$num-menu: (1 2 3 4);
 $bg-menu: (
-  1: red,
-  2: blue,
-  3: yellow,
-  4: pink,
-  5: green
+  1: #fcdfdb,
+  2: #fff5fe,
+  3: #f9f9f9,
+  4: #fdfffc
+);
+$font-menu:(
+  1:"Sans-serif",
+  2:"Arial",
+  3:"Montserrat",
+  4:"Helvetica"
 );
