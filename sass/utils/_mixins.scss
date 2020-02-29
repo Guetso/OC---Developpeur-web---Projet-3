@@ -8,7 +8,12 @@
       border: solid 1px;
       text-align: center;
       display: flex;
+      overflow: hidden;
       background-color: map-get($map: $bg-menu, $key: $num-bg-menu);
     }
   }
+}
+
+.menu__titre{
+  border: solid 1px;
 }
