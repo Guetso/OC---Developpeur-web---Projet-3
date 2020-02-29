@@ -6,7 +6,8 @@ Concevoir un site web de référencement de restaurants dans le cadre du parcour
 - Procédure ajout d'un menu :
 
     - Dans index.html : Ajouter une balise en précisant son numéro:
-<!--
+    
+```html
 <article class="menu-#">
                 <a href="">
                     <div class="menu__ico"></div>
@@ -14,7 +15,7 @@ Concevoir un site web de référencement de restaurants dans le cadre du parcour
                     <p class="menu__menu">Menu</p>
                 </a>
             </article>
--->
+```
     - Dans menu.scss:
         - ajouter un appel de mixin en attribuant les valeurs
 TODO :
