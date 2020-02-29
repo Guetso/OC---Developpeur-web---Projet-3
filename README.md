@@ -15,12 +15,10 @@ Procédure ajout d'un menu :
                 </a>
             </article>
 
-- Dans variables.scss : 
-    - Ajouter un numéro à la suite de la variable $num-menu
-    - Ajouter un numéro et une couleur attribuée dans la variable bg-menu
 - Dans menu.scss:
-    -ajouter un appel de mixin en attribuant les numéro (#num-menu, #bg_menu)
+    -ajouter un appel de mixin en attribuant les valeurs
 
 TODO :
 -Màj de l'url du site et de l'image dans les meta OG dès que mis en ligne
 -Trouver une police pour l'aside
+-Appliquer les webkit - vérifier si pas de conflit avec le webkit lineargradient appliqué manuellement

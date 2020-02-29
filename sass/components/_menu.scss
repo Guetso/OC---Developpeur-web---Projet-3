@@ -1,5 +1,11 @@
-@include menu(1, 1);
-@include menu(2, 2);
-@include menu(3, 3);
-@include menu(4, 4);
+@include menu(1, #fcdfdb); // CADRE MENU // #N° du menu / #backgroundcolor //
+@include menu__ico(1);
+@include menu__titre(1,'Devonshire',1rem,500,black); // NOM RESTAURANT // N° du menu / #fontfamily /  font-size / font-weight / color //
 
+
+
+@include menu(2, #fff5fe);
+
+@include menu(3, #f9f9f9);
+
+@include menu(4, #fdfffc);
