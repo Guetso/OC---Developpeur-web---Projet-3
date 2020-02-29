@@ -1,7 +1,7 @@
-@include menu(1, #fcdfdb); // CADRE MENU // #N° du menu / #backgroundcolor //
+@include menu(1, #fcdfdb); // "CADRE MENU" // #N° du menu / #backgroundcolor //
 @include menu__ico(1);
-@include menu__titre(1,'Devonshire',1rem,500,black); // NOM RESTAURANT // N° du menu / #fontfamily /  font-size / font-weight / color //
-
+@include menu__titre(1,'Devonshire',0.9rem,500,black); // "NOM RESTAURANT" // N° du menu / #fontfamily /  font-size / font-weight / color //
+@include menu__menu(1,'Itim',1.1rem,500,black,italic); // "MENU" // N° du menu / #fontfamily /font-weight / color / font-style //
 
 
 @include menu(2, #fff5fe);

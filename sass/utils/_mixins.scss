@@ -8,9 +8,9 @@
       text-align: center;
       display: flex;
       overflow: hidden;
-      display: flex;
       justify-content: center;
       align-items: center;
+      box-shadow: 0.5px 0.5px 8px rgb(214, 214, 214);
       background-color: $bg-menu;
     }
   }
@@ -19,6 +19,7 @@
 @mixin menu__ico($num-menu) {
   .menu__ico {
     &-#{$num-menu} {
+    margin-top: 4vh;
     margin-bottom: 0;
     display: flex;
     justify-content: center;
@@ -37,6 +38,19 @@
       font-size: $font-size;
       font-weight: $font-weight;
       color: $font-color;
+    }
+  }
+}
+
+@mixin menu__menu($num-menu, $fontfam-menu, $font-size, $font-weight, $font-color, $font-style) {
+  .menu__menu {
+    &-#{$num-menu} {
+      margin-top: 0;
+      font-family: $fontfam-menu;
+      font-size: $font-size;
+      font-weight: $font-weight;
+      color: $font-color;
+      font-style: $font-style;
     }
   }
 }

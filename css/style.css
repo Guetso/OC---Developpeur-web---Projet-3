@@ -29,7 +29,7 @@ header {
 footer {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .btn {
@@ -53,13 +53,14 @@ footer {
   text-align: center;
   display: flex;
   overflow: hidden;
-  display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fcdfdb;
 }
 
 .menu__ico-1 {
+  margin-top: 4vh;
   margin-bottom: 0;
   display: flex;
   justify-content: center;
@@ -71,9 +72,18 @@ footer {
 .menu__titre-1 {
   margin-top: 0;
   font-family: "Devonshire";
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: black;
+}
+
+.menu__menu-1 {
+  margin-top: 0;
+  font-family: "Itim";
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: black;
+  font-style: italic;
 }
 
 .menu-2 {
@@ -83,9 +93,9 @@ footer {
   text-align: center;
   display: flex;
   overflow: hidden;
-  display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fff5fe;
 }
 
@@ -96,9 +106,9 @@ footer {
   text-align: center;
   display: flex;
   overflow: hidden;
-  display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #f9f9f9;
 }
 
@@ -109,9 +119,9 @@ footer {
   text-align: center;
   display: flex;
   overflow: hidden;
-  display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fdfffc;
 }
 
