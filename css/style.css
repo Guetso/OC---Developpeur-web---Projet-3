@@ -60,7 +60,6 @@ footer {
 }
 
 .menu__ico-1 {
-  margin-top: 4vh;
   margin-bottom: 0;
   display: flex;
   justify-content: center;
@@ -74,15 +73,17 @@ footer {
   margin-top: 0;
   font-family: "Devonshire";
   font-size: 0.9rem;
-  font-weight: 500;
-  color: black;
+  font-weight: 400;
+  background: -webkit-linear-gradient(-45deg, black 20%, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu__menu-1 {
   margin-top: 0;
   font-family: "Itim";
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 400;
   color: black;
   font-style: italic;
 }
@@ -98,6 +99,25 @@ footer {
   align-items: center;
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fff5fe;
+}
+
+.menu__titre-2 {
+  margin-top: 0;
+  font-family: "Kurale";
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: -webkit-linear-gradient(-45deg, #C17624 20%, #9A76E5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu__menu-2 {
+  margin-top: 0;
+  font-family: "Abril Fatface";
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #C17624;
+  font-style: normal;
 }
 
 .menu-3 {

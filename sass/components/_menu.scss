@@ -1,10 +1,12 @@
 @include menu(1, #fcdfdb); // "CADRE MENU" // #N° du menu / #backgroundcolor //
 @include menu__ico(1);
-@include menu__titre(1,'Devonshire',0.9rem,500,black); // "NOM RESTAURANT" // N° du menu / #fontfamily /  font-size / font-weight / color //
-@include menu__menu(1,'Itim',1.1rem,500,black,italic); // "MENU" // N° du menu / #fontfamily /font-weight / color / font-style //
+@include menu__titre(1,'Devonshire',0.9rem,400,black,black); // "NOM RESTAURANT" // N° du menu / #fontfamily /  font-size / font-weight / color //
+@include menu__menu(1,'Itim',1.1rem,400,black,italic); // "MENU" // N° du menu / #fontfamily /font-weight / color / font-style //
 
 
 @include menu(2, #fff5fe);
+@include menu__titre(2,'Kurale',0.8rem,600,#C17624,#9A76E5);
+@include menu__menu(2,'Abril Fatface',1.1rem,400,#C17624,normal);
 
 @include menu(3, #f9f9f9);
 

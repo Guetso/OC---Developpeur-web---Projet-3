@@ -19,7 +19,6 @@
 @mixin menu__ico($num-menu) {
   .menu__ico {
     &-#{$num-menu} {
-    margin-top: 4vh;
     margin-bottom: 0;
     display: flex;
     justify-content: center;
@@ -31,14 +30,16 @@
   }
 }
 
-@mixin menu__titre($num-menu, $fontfam-menu, $font-size, $font-weight, $font-color) {
+@mixin menu__titre($num-menu, $fontfam-menu, $font-size, $font-weight, $color1, $color2) {
   .menu__titre {
     &-#{$num-menu} {
       margin-top: 0;
       font-family: $fontfam-menu;
       font-size: $font-size;
       font-weight: $font-weight;
-      color: $font-color;
+      background: -webkit-linear-gradient(-45deg, $color1 20%, $color2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
