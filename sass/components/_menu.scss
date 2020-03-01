@@ -1,5 +1,5 @@
 @include menu(1, #fcdfdb); // "CADRE MENU" // #N° du menu / #backgroundcolor //
-@include menu__ico(1);
+@include menu__ico(1); //"ICONE"// #N° du menu //
 @include menu__titre(1,'Devonshire',0.9rem,400,black,black); // "NOM RESTAURANT" // N° du menu / #fontfamily /  font-size / font-weight / color //
 @include menu__menu(1,'Itim',1.1rem,400,black,italic); // "MENU" // N° du menu / #fontfamily /font-weight / color / font-style //
 
@@ -9,5 +9,9 @@
 @include menu__menu(2,'Abril Fatface',1.1rem,400,#C17624,normal);
 
 @include menu(3, #f9f9f9);
+@include menu__titre(3,'Dancing Script',1rem,500,#1530B7,#56a7e6);
+@include menu__menu(3,'Chilanka',1.1rem,400,#56a7e6,normal);
 
 @include menu(4, #fdfffc);
+@include menu__titre(4,'Kaushan Script',1rem,500,#55924D,#C8FA80);
+@include menu__menu(4,'Chilanka',1.1rem,400,#77BF4F,normal);

@@ -36,27 +36,32 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   background-color: #579c87;
   color: #fbcb4e;
   width: 185px;
-  height: 35px;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  height: 32px;
+  margin: 1.5rem 0 1.5rem 0;
   border-radius: 0.5rem;
 }
 
 .menu-1 {
-  height: 31vh;
-  width: 22vh;
+  height: 13rem;
+  width: 9rem;
   margin: 3vh 1vh 1vh 1vh;
   text-align: center;
   display: flex;
-  overflow: hidden;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fcdfdb;
+}
+.menu-1 a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .menu__ico-1 {
@@ -65,8 +70,8 @@ footer {
   justify-content: center;
 }
 .menu__ico-1 img {
-  width: 7vw;
-  height: 7vw;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .menu__titre-1 {
@@ -74,7 +79,7 @@ footer {
   font-family: "Devonshire";
   font-size: 0.9rem;
   font-weight: 400;
-  background: -webkit-linear-gradient(-45deg, black 20%, black);
+  background: -webkit-linear-gradient(-45deg, black 10%, black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -89,16 +94,23 @@ footer {
 }
 
 .menu-2 {
-  height: 31vh;
-  width: 22vh;
+  height: 13rem;
+  width: 9rem;
   margin: 3vh 1vh 1vh 1vh;
   text-align: center;
   display: flex;
-  overflow: hidden;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fff5fe;
+}
+.menu-2 a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .menu__titre-2 {
@@ -106,7 +118,7 @@ footer {
   font-family: "Kurale";
   font-size: 0.8rem;
   font-weight: 600;
-  background: -webkit-linear-gradient(-45deg, #C17624 20%, #9A76E5);
+  background: -webkit-linear-gradient(-45deg, #C17624 10%, #9A76E5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -121,29 +133,81 @@ footer {
 }
 
 .menu-3 {
-  height: 31vh;
-  width: 22vh;
+  height: 13rem;
+  width: 9rem;
   margin: 3vh 1vh 1vh 1vh;
   text-align: center;
   display: flex;
-  overflow: hidden;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #f9f9f9;
 }
+.menu-3 a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu__titre-3 {
+  margin-top: 0;
+  font-family: "Dancing Script";
+  font-size: 1rem;
+  font-weight: 500;
+  background: -webkit-linear-gradient(-45deg, #1530B7 10%, #56a7e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu__menu-3 {
+  margin-top: 0;
+  font-family: "Chilanka";
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #56a7e6;
+  font-style: normal;
+}
 
 .menu-4 {
-  height: 31vh;
-  width: 22vh;
+  height: 13rem;
+  width: 9rem;
   margin: 3vh 1vh 1vh 1vh;
   text-align: center;
   display: flex;
-  overflow: hidden;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fdfffc;
+}
+.menu-4 a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu__titre-4 {
+  margin-top: 0;
+  font-family: "Kaushan Script";
+  font-size: 1rem;
+  font-weight: 500;
+  background: -webkit-linear-gradient(-45deg, #55924D 10%, #C8FA80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu__menu-4 {
+  margin-top: 0;
+  font-family: "Chilanka";
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #77BF4F;
+  font-style: normal;
 }
 
 header {
@@ -151,7 +215,7 @@ header {
   overflow: hidden;
   background-color: #579c87;
   color: #fbcb4e;
-  min-height: 10vh;
+  min-height: 4.5rem;
 }
 header h1 {
   display: flex;
@@ -177,7 +241,7 @@ footer {
   overflow: hidden;
   background-color: #579c87;
   color: #fbcb4e;
-  min-height: 5.5vh;
+  min-height: 2.5rem;
   padding-left: 1.5vh;
   padding-right: 1.5vh;
 }
@@ -214,7 +278,6 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

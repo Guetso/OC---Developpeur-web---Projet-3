@@ -2,12 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   background-color: $prim-color;
   color: $secon-color;
   width: 185px;
-  height: 35px;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  height: 32px;
+  margin: 1.5rem 0 1.5rem 0;
   border-radius: 0.5rem;
 }
