@@ -1,5 +1,5 @@
-//Design des menus
-@mixin menu($num-menu, $bg-menu) {
+//Design des menus page acceuil
+@mixin menu($num-menu, $num-bg-menu) {
   .menu {
     &-#{$num-menu} {
       height: 13rem;
@@ -10,7 +10,7 @@
       justify-content: center;
       align-items: stretch;
       box-shadow: 0.5px 0.5px 8px rgb(214, 214, 214);
-      background-color: $bg-menu;
+      background-color: map-get($map: $bg-menu, $key:$num-bg-menu );
       a{
         display: flex;
         flex-direction: column;
@@ -37,28 +37,28 @@
   }
 }
 
-@mixin menu__titre($num-menu, $fontfam-menu, $font-size, $font-weight, $color1, $color2) {
+@mixin menu__titre($num-menu, $num-font, $font-size, $font-weight, $color1, $color2) {
   .menu__titre {
     &-#{$num-menu} {
       margin-top: 0;
-      font-family: $fontfam-menu;
+      font-family: map-get($map: $font-menu__titre, $key:$num-font );
       font-size: $font-size;
       font-weight: $font-weight;
-      background: -webkit-linear-gradient(-45deg, $color1 10%, $color2);
+      background: -webkit-linear-gradient(-45deg, map-get($map: $color1-menu__titre, $key:$color1) 10%, map-get($map: $color2-menu__titre, $key:$color2));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
 }
 
-@mixin menu__menu($num-menu, $fontfam-menu, $font-size, $font-weight, $font-color, $font-style) {
+@mixin menu__menu($num-menu, $fontfam-menu, $font-size, $font-weight, $color, $font-style) {
   .menu__menu {
     &-#{$num-menu} {
       margin-top: 0;
       font-family: $fontfam-menu;
       font-size: $font-size;
       font-weight: $font-weight;
-      color: $font-color;
+      color: map-get($map: $color-menu__menu, $key:$color );
       font-style: $font-style;
     }
   }

@@ -1,5 +1,33 @@
 $prim-color: #579c87;
 $secon-color: #fbcb4e;
 $num-menu: (1 2 3 4);
-
-
+$bg-menu: (
+  1: #fcdfdb,
+  2: #fff5fe,
+  3: #f9f9f9,
+  4: #fdfffc
+);
+$font-menu__titre: (
+  1: "Devonshire",
+  2: "Kurale",
+  3: "Dancing Script",
+  4: "Kaushan Script"
+);
+$color1-menu__titre: (
+  1: black,
+  2: #c17624,
+  3: #1530b7,
+  4: #55924d
+);
+$color2-menu__titre: (
+  1: black,
+  2: #9a76e5,
+  3: #56a7e6,
+  4: #c8fa80
+);
+$color-menu__menu: (
+  1: black,
+  2: #c17624,
+  3: #56a7e6,
+  4: #77bf4f
+);
