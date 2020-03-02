@@ -7,9 +7,11 @@
 @import "./base/typography";
 @import "./components/btn";
 @import "./components/menu";
+@import "./components/list";
 //blocs BEM indépendants
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/sectionp";
 //blocs BEM réutilisables
 @import "./pages/acceuil";
+@import "./pages/restaurant";

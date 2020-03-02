@@ -1,0 +1,37 @@
+.list {
+  background-color: map-get($map: $bg-menu, $key: 1);
+  box-shadow: 0.5px 0.5px 8px rgb(214, 214, 214);
+  width: 40vh;
+  height: 73vh;
+  margin: auto;
+  margin-top: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  &__header {
+    text-align: center;
+    font-family: map-get($map: $font-menu__titre, $key: 1);
+    font-size: 1.2rem;
+    h3 {
+      margin: 0;
+    }
+  }
+  &__ico {
+    width: 2.5rem;
+    height: 100%;
+    margin-top: 1rem;
+  }
+}
+
+.bloc_titre{
+    display: flex;;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    img{
+        width: 6rem;
+        height: 100%;
+    }
+    h4{
+        margin: 0;
+    }
+}
