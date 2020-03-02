@@ -238,7 +238,6 @@ footer {
   justify-content: space-between;
   justify-self: flex-end;
   align-items: center;
-  overflow: hidden;
   background-color: #579c87;
   color: #fbcb4e;
   min-height: 2.5rem;
