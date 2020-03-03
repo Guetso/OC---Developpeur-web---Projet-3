@@ -22,7 +22,6 @@ body a {
 
 #menu_header h2 {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
-  font-weight: 700;
   font-size: 1.2rem;
 }
 
@@ -32,7 +31,7 @@ body a {
   font-size: 0.9rem;
 }
 
-.btn {
+.btn h2 {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
   font-weight: 400;
   font-size: 1.1rem;

@@ -8,7 +8,6 @@
 #menu_header {
   h2 {
     font-family: "Montserrat", sans-serif, Arial, Helvetica;
-    font-weight: 700;
     font-size: 1.2rem;
   }
 }
@@ -20,7 +19,9 @@
 }
 
 .btn {
-  font-family: "Montserrat", sans-serif, Arial, Helvetica;
-  font-weight: 400;
-  font-size: 1.1rem;
+  h2 {
+    font-family: "Montserrat", sans-serif, Arial, Helvetica;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
 }
