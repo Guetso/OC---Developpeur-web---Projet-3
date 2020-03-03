@@ -4,9 +4,11 @@ body {
 }
 body #bloc_page {
   display: flex;
-  height: 100%;
+  height: 94.5%;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
 }
 body a {
   color: black;
@@ -315,27 +317,32 @@ article li {
 }
 
 #main_footer {
-  text-align: center;
   display: flex;
   justify-content: space-between;
-  justify-self: flex-end;
-  align-items: center;
+  align-items: stretch;
   background-color: #579c87;
   color: #fbcb4e;
-  min-height: 2.5rem;
+  min-height: 5.5%;
   padding-left: 1.5vh;
   padding-right: 1.5vh;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
 }
 #main_footer div {
   display: flex;
-  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.legals a, .contact a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.legals a,
+.contact a {
   color: #fbcb4e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 #section_menu {
@@ -348,11 +355,6 @@ article li {
 
 .titre_menu {
   display: none;
-}
-
-.menu a {
-  padding-top: 33%;
-  padding-bottom: 33%;
 }
 
 #soon {

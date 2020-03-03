@@ -3,9 +3,11 @@ body {
   height: 100vh;
   #bloc_page {
     display: flex;
-    height: 100%;
+    height: 94.5%;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
   }
   a {
     color: black;
