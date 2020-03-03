@@ -252,6 +252,45 @@ body a {
 }
 .bloc_titre h4 {
   margin: 0;
+  font-family: "Kalam";
+  font-size: 0.8rem;
+}
+
+article {
+  margin-top: 1.5rem;
+}
+article ul {
+  list-style: none;
+  font-family: "Kalam";
+  font-size: 0.5rem;
+  padding: 0;
+}
+article li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  padding: 0;
+}
+
+.item {
+  margin: 0;
+}
+
+.price {
+  margin: 0;
+  font-weight: bold;
+}
+
+.list_footer {
+  text-align: center;
+  font-family: "Devonshire";
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.list_footer img {
+  width: 1.5rem;
 }
 
 #main_header {
@@ -317,7 +356,7 @@ body a {
   padding-bottom: 33%;
 }
 
-aside {
+#soon {
   display: flex;
   justify-content: center;
   align-items: center;
