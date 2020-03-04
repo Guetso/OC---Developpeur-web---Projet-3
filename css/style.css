@@ -2,13 +2,17 @@ body {
   margin: 0;
   height: 100vh;
 }
-body #bloc_page {
+body .bloc_page {
   display: flex;
-  min-height: 94.5%;
+  min-height: 74.5%;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   position: relative;
   box-sizing: border-box;
+}
+body .bloc_page--list {
+  min-height: 84.5%;
+  justify-content: flex-start;
 }
 body a {
   color: black;
@@ -47,14 +51,13 @@ body a {
   color: #fbcb4e;
   width: 185px;
   height: 32px;
-  margin: 2.5rem 0 2.5em 0;
   border-radius: 0.5rem;
 }
 
 .menu-1 {
-  height: 13rem;
-  width: 9rem;
-  margin: 3vh 1vh 1vh 1vh;
+  height: 31vh;
+  width: 22vh;
+  margin: 1.5vh 1vh 1.5vh 1vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -101,9 +104,9 @@ body a {
 }
 
 .menu-2 {
-  height: 13rem;
-  width: 9rem;
-  margin: 3vh 1vh 1vh 1vh;
+  height: 31vh;
+  width: 22vh;
+  margin: 1.5vh 1vh 1.5vh 1vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -140,9 +143,9 @@ body a {
 }
 
 .menu-3 {
-  height: 13rem;
-  width: 9rem;
-  margin: 3vh 1vh 1vh 1vh;
+  height: 31vh;
+  width: 22vh;
+  margin: 1.5vh 1vh 1.5vh 1vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -179,9 +182,9 @@ body a {
 }
 
 .menu-4 {
-  height: 13rem;
-  width: 9rem;
-  margin: 3vh 1vh 1vh 1vh;
+  height: 31vh;
+  width: 22vh;
+  margin: 1.5vh 1vh 1.5vh 1vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -298,7 +301,7 @@ article li {
   overflow: hidden;
   background-color: #579c87;
   color: #fbcb4e;
-  min-height: 4.5rem;
+  height: 10%;
 }
 #main_header h1 {
   display: flex;
@@ -350,16 +353,17 @@ article li {
   justify-content: space-around;
   padding-left: 3vh;
   padding-right: 3vh;
-  margin-top: 1rem;
-}
-
-.titre_menu {
-  display: none;
 }
 
 #soon {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+
+.titre_menu {
+  display: none;
 }
 
 #menu_header h2 {
