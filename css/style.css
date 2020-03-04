@@ -68,6 +68,12 @@ body a {
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fcdfdb;
 }
+@media all and (min-width: 1023px) {
+  .menu-1 {
+    height: 50vh;
+    width: 35vh;
+  }
+}
 .menu-1 a {
   display: flex;
   flex-direction: column;
@@ -119,6 +125,12 @@ body a {
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fff5fe;
 }
+@media all and (min-width: 1023px) {
+  .menu-2 {
+    height: 50vh;
+    width: 35vh;
+  }
+}
 .menu-2 a {
   display: flex;
   flex-direction: column;
@@ -159,6 +171,12 @@ body a {
   align-items: stretch;
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #f9f9f9;
+}
+@media all and (min-width: 1023px) {
+  .menu-3 {
+    height: 50vh;
+    width: 35vh;
+  }
 }
 .menu-3 a {
   display: flex;
@@ -201,6 +219,12 @@ body a {
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fdfffc;
 }
+@media all and (min-width: 1023px) {
+  .menu-4 {
+    height: 50vh;
+    width: 35vh;
+  }
+}
 .menu-4 a {
   display: flex;
   flex-direction: column;
@@ -213,7 +237,7 @@ body a {
 .menu__titre-4 {
   margin-top: 0;
   font-family: "Kaushan Script";
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80);
   -webkit-background-clip: text;
@@ -232,8 +256,7 @@ body a {
 .list {
   background-color: #fcdfdb;
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
-  min-width: 75%;
-  min-height: 90%;
+  width: 18rem;
   margin: 0 auto 2rem auto;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -266,6 +289,7 @@ body a {
   margin: 0;
   font-family: "Kalam";
   font-size: 0.8rem;
+  text-align: center;
 }
 
 article {
@@ -305,6 +329,60 @@ article li {
   width: 1.5rem;
 }
 
+@media all and (min-width: 1440px) {
+  .list {
+    width: 70rem;
+    height: 40rem;
+  }
+
+  .bloc_titre img {
+    width: 10rem;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1399px) {
+  .list {
+    width: 50rem;
+    height: 40rem;
+  }
+
+  .bloc_titre img {
+    width: 10rem;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .list {
+    width: 31rem;
+    height: 45rem;
+  }
+
+  .bloc_titre img {
+    width: 8rem;
+  }
+}
+@media all and (max-width: 360px) {
+  .list {
+    width: 12rem;
+  }
+
+  article li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bloc_titre img {
+    width: 4rem;
+  }
+}
+@media all and (max-width: 260px) {
+  .list {
+    width: 4rem;
+  }
+
+  .bloc_titre img {
+    width: 1rem;
+  }
+}
 #main_header {
   display: flex;
   overflow: hidden;
