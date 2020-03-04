@@ -6,9 +6,10 @@ body #bloc_page {
   display: flex;
   min-height: 94.5%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
   box-sizing: border-box;
+  border: solid;
 }
 body a {
   color: black;
@@ -47,7 +48,7 @@ body a {
   color: #fbcb4e;
   width: 185px;
   height: 32px;
-  margin: 1.5rem 0 1.5rem 0;
+  margin: 2.5rem 0 2.5em 0;
   border-radius: 0.5rem;
 }
 
@@ -220,10 +221,9 @@ body a {
 .list {
   background-color: #fcdfdb;
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
-  width: 40vh;
-  height: 73vh;
-  margin: auto;
-  margin-top: 0;
+  width: 75%;
+  height: 90%;
+  margin: 0 auto 2rem auto;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -351,6 +351,7 @@ article li {
   justify-content: space-around;
   padding-left: 3vh;
   padding-right: 3vh;
+  margin-top: 1rem;
 }
 
 .titre_menu {
@@ -360,13 +361,12 @@ article li {
 #soon {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 #menu_header h2 {
   text-align: center;
-  margin-top: 1.5rem;
-  margin-bottom: 0.7rem;
+  margin: 2rem auto 0.5rem auto;
+  width: 75%;
 }
 
 .list__header h3 {

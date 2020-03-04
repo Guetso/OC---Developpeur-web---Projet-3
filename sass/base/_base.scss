@@ -5,9 +5,10 @@ body {
     display: flex;
     min-height: 94.5%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     position: relative;
     box-sizing: border-box;
+    border: solid;
   }
   a {
     color: black;
