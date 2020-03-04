@@ -1,8 +1,8 @@
 .list {
   background-color: map-get($map: $bg-menu, $key: 1);
   box-shadow: 0.5px 0.5px 8px rgb(214, 214, 214);
-  width: 75%;
-  height: 90%;
+  min-width: 75%;
+  min-height: 90%;
   margin: 0 auto 2rem auto;
   padding-left: 2rem;
   padding-right: 2rem;

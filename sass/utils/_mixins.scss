@@ -4,6 +4,8 @@
     &-#{$num-menu} {
       height: 31vh;
       width: 22vh;
+      min-height: 8rem;
+      min-width: 6rem;
       margin: 1.5vh 1vh 1.5vh 1vh;
       text-align: center;
       display: flex;

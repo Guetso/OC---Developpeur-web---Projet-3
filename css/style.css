@@ -51,12 +51,15 @@ body a {
   color: #fbcb4e;
   width: 185px;
   height: 32px;
+  max-height: 100%;
   border-radius: 0.5rem;
 }
 
 .menu-1 {
   height: 31vh;
   width: 22vh;
+  min-height: 8rem;
+  min-width: 6rem;
   margin: 1.5vh 1vh 1.5vh 1vh;
   text-align: center;
   display: flex;
@@ -106,6 +109,8 @@ body a {
 .menu-2 {
   height: 31vh;
   width: 22vh;
+  min-height: 8rem;
+  min-width: 6rem;
   margin: 1.5vh 1vh 1.5vh 1vh;
   text-align: center;
   display: flex;
@@ -145,6 +150,8 @@ body a {
 .menu-3 {
   height: 31vh;
   width: 22vh;
+  min-height: 8rem;
+  min-width: 6rem;
   margin: 1.5vh 1vh 1.5vh 1vh;
   text-align: center;
   display: flex;
@@ -184,6 +191,8 @@ body a {
 .menu-4 {
   height: 31vh;
   width: 22vh;
+  min-height: 8rem;
+  min-width: 6rem;
   margin: 1.5vh 1vh 1.5vh 1vh;
   text-align: center;
   display: flex;
@@ -223,8 +232,8 @@ body a {
 .list {
   background-color: #fcdfdb;
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
-  width: 75%;
-  height: 90%;
+  min-width: 75%;
+  min-height: 90%;
   margin: 0 auto 2rem auto;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -301,7 +310,7 @@ article li {
   overflow: hidden;
   background-color: #579c87;
   color: #fbcb4e;
-  height: 10%;
+  min-height: 10%;
 }
 #main_header h1 {
   display: flex;
@@ -344,9 +353,24 @@ article li {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 100%;
 }
 
+@media all and (max-width: 200px) {
+  #main_footer {
+    flex-direction: column;
+  }
+
+  .contact {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .legals {
+    margin-top: 1rem;
+  }
+}
 #section_menu {
   display: flex;
   flex-flow: row wrap;

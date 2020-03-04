@@ -24,6 +24,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100%;
+  }
+}
+@media all and (max-width: 200px) {
+  #main_footer {
+    flex-direction: column;
+  }
+  .contact {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .legals
+  {
+    margin-top: 1rem;
   }
 }
