@@ -9,7 +9,6 @@ body #bloc_page {
   justify-content: flex-start;
   position: relative;
   box-sizing: border-box;
-  border: solid;
 }
 body a {
   color: black;
