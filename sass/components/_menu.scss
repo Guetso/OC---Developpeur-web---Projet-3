@@ -1,5 +1,4 @@
 @include menu(1, 1); // "CADRE MENU" // #N° du menu / #backgroundcolor //
-@include menu__ico(1); //"ICONE"// #N° du menu //
 @include menu__titre(1,1,0.9rem,400,1,1,1); // "NOM RESTAURANT" // N° du menu / #fontfamily /  font-size / font-weight / color*3 //
 @include menu__menu(1,'Itim',1.1rem,400,1,italic); // "MENTION MENU" // N° du menu / #fontfamily /font-weight / color*2 / font-style //
 

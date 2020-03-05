@@ -61,50 +61,10 @@ body a {
 }
 
 .menu-1 {
-  height: 31vh;
-  width: 22vh;
-  min-height: 8rem;
-  min-width: 6rem;
-  margin: 1.5vh 1vh 1.5vh 1vh;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fcdfdb;
-}
-@media all and (min-width: 1023px) {
-  .menu-1 {
-    height: 50vh;
-    width: 35vh;
-  }
-}
-.menu-1 a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.menu__ico-1 {
-  margin-bottom: 0;
-  display: flex;
-  justify-content: center;
-}
-.menu__ico-1 img {
-  width: 1.5rem;
-  height: 100%;
-}
-@media all and (min-width: 1023px) {
-  .menu__ico-1 img {
-    width: 4rem;
-  }
 }
 
 .menu__titre-1 {
-  margin-top: 0;
   font-family: "Devonshire";
   font-size: 0.9rem;
   font-weight: 400;
@@ -119,7 +79,6 @@ body a {
 }
 
 .menu__menu-1 {
-  margin-top: 0;
   font-family: "Itim";
   font-size: 1.1rem;
   font-weight: 400;
@@ -133,35 +92,10 @@ body a {
 }
 
 .menu-2 {
-  height: 31vh;
-  width: 22vh;
-  min-height: 8rem;
-  min-width: 6rem;
-  margin: 1.5vh 1vh 1.5vh 1vh;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fff5fe;
-}
-@media all and (min-width: 1023px) {
-  .menu-2 {
-    height: 50vh;
-    width: 35vh;
-  }
-}
-.menu-2 a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
 }
 
 .menu__titre-2 {
-  margin-top: 0;
   font-family: "Kurale";
   font-size: 0.8rem;
   font-weight: 600;
@@ -176,7 +110,6 @@ body a {
 }
 
 .menu__menu-2 {
-  margin-top: 0;
   font-family: "Abril Fatface";
   font-size: 1.1rem;
   font-weight: 400;
@@ -190,35 +123,10 @@ body a {
 }
 
 .menu-3 {
-  height: 31vh;
-  width: 22vh;
-  min-height: 8rem;
-  min-width: 6rem;
-  margin: 1.5vh 1vh 1.5vh 1vh;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #f3f3f3;
-}
-@media all and (min-width: 1023px) {
-  .menu-3 {
-    height: 50vh;
-    width: 35vh;
-  }
-}
-.menu-3 a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
 }
 
 .menu__titre-3 {
-  margin-top: 0;
   font-family: "Dancing Script";
   font-size: 1rem;
   font-weight: 500;
@@ -233,7 +141,6 @@ body a {
 }
 
 .menu__menu-3 {
-  margin-top: 0;
   font-family: "Chilanka";
   font-size: 1.1rem;
   font-weight: 400;
@@ -247,35 +154,10 @@ body a {
 }
 
 .menu-4 {
-  height: 31vh;
-  width: 22vh;
-  min-height: 8rem;
-  min-width: 6rem;
-  margin: 1.5vh 1vh 1.5vh 1vh;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  box-shadow: 0.5px 0.5px 8px #d6d6d6;
   background-color: #fdfffc;
-}
-@media all and (min-width: 1023px) {
-  .menu-4 {
-    height: 50vh;
-    width: 35vh;
-  }
-}
-.menu-4 a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
 }
 
 .menu__titre-4 {
-  margin-top: 0;
   font-family: "Kaushan Script";
   font-size: 0.9rem;
   font-weight: 500;
@@ -290,7 +172,6 @@ body a {
 }
 
 .menu__menu-4 {
-  margin-top: 0;
   font-family: "Chilanka";
   font-size: 1.1rem;
   font-weight: 400;
@@ -1302,6 +1183,56 @@ body a {
 
 .titre_menu {
   display: none;
+}
+
+.menu {
+  height: 31vh;
+  width: 22vh;
+  min-height: 8rem;
+  min-width: 6rem;
+  margin: 1.5vh 1vh 1.5vh 1vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  box-shadow: 0.5px 0.5px 8px #d6d6d6;
+}
+@media all and (min-width: 1023px) {
+  .menu {
+    height: 50vh;
+    width: 35vh;
+  }
+}
+.menu a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu__ico {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.menu__ico img {
+  width: 1.5rem;
+  height: 100%;
+}
+@media all and (min-width: 1023px) {
+  .menu__ico img {
+    width: 4rem;
+  }
+}
+
+.menu__titre {
+  margin-top: 0;
+}
+
+.menu__menu {
+  margin-top: 0;
 }
 
 #menu_header h2 {
