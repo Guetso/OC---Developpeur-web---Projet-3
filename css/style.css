@@ -200,7 +200,7 @@ body a {
   justify-content: center;
   align-items: stretch;
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
-  background-color: #f9f9f9;
+  background-color: #f3f3f3;
 }
 @media all and (min-width: 1023px) {
   .menu-3 {
@@ -707,7 +707,7 @@ body a {
 }
 .list-2 article ul {
   font-family: "Crimson Text";
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 .list-2 article:nth-of-type(1) ul {
   color: #d17122;
@@ -739,7 +739,7 @@ body a {
     font-size: 1.4rem;
   }
   .list-2 article ul {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   .list-2__footer {
     font-size: 1.5rem;
@@ -753,7 +753,7 @@ body a {
     font-size: 1.4rem;
   }
   .list-2 article ul {
-    font-size: 0.9rem;
+    font-size: 1.44rem;
   }
   .list-2__footer {
     font-size: 1.5rem;
@@ -767,7 +767,7 @@ body a {
     font-size: 1.2rem;
   }
   .list-2 article ul {
-    font-size: 0.7rem;
+    font-size: 1.12rem;
   }
   .list-2__footer {
     font-size: 1.4rem;
@@ -775,6 +775,446 @@ body a {
 }
 @media all and (max-width: 360px) {
   .list-2__header {
+    font-size: 0.8rem;
+  }
+}
+
+.list-3 {
+  background-color: #f3f3f3;
+  box-shadow: 0.5px 0.5px 8px #d6d6d6;
+  width: 18rem;
+  margin: 0 auto 2rem auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.list-3__header {
+  text-align: center;
+}
+.list-3__header h3 {
+  margin: 0;
+}
+.list-3__ico {
+  width: 2.5rem;
+  height: 100%;
+  margin-top: 1rem;
+}
+.list-3__step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.list-3__step img {
+  width: 6rem;
+  height: 100%;
+}
+.list-3__step h4 {
+  margin: 0;
+  text-align: center;
+}
+.list-3 article {
+  margin-top: 1.5rem;
+}
+.list-3 article ul {
+  list-style: none;
+  padding: 0;
+}
+.list-3 article li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  padding: 0;
+}
+.list-3 .item {
+  margin: 0;
+}
+.list-3 .price {
+  margin: 0;
+  font-weight: bold;
+}
+.list-3__footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.list-3__footer img {
+  width: 1.5rem;
+}
+@media all and (min-width: 1440px) {
+  .list-3 {
+    width: 50rem;
+    height: 72rem;
+  }
+  .list-3__ico {
+    width: 4rem;
+  }
+  .list-3 article {
+    margin-top: 5rem;
+  }
+  .list-3__step img {
+    width: 10rem;
+  }
+  .list-3 ul {
+    margin-top: 2rem;
+  }
+  .list-3 li {
+    margin-top: 1.3rem;
+  }
+  .list-3__footer img {
+    transform: translateY(0.7rem);
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .list-3 {
+    width: 50rem;
+    height: 72rem;
+  }
+  .list-3__ico {
+    width: 3rem;
+  }
+  .list-3 article {
+    margin-top: 5rem;
+  }
+  .list-3__step img {
+    width: 10rem;
+  }
+  .list-3 ul {
+    margin-top: 2rem;
+  }
+  .list-3 li {
+    margin-top: 1.3rem;
+  }
+  .list-3__footer img {
+    transform: translateY(0.7rem);
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .list-3 {
+    width: 31rem;
+    height: 45rem;
+  }
+  .list-3 article {
+    margin-top: 3rem;
+  }
+  .list-3__step img {
+    width: 8rem;
+  }
+  .list-3__footer img {
+    transform: translateY(0.5rem);
+  }
+}
+@media all and (max-width: 360px) {
+  .list-3 {
+    width: 12rem;
+  }
+  .list-3__ico {
+    width: 2rem;
+  }
+  .list-3 article li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .list-3__step img {
+    width: 4rem;
+  }
+}
+@media all and (max-width: 260px) {
+  .list-3 {
+    width: 4rem;
+  }
+  .list-3__ico {
+    width: 1.5rem;
+  }
+  .list-3__step img {
+    width: 1rem;
+  }
+}
+
+.list-3__header {
+  font-family: "Dancing Script";
+  font-size: 1rem;
+  background: -webkit-linear-gradient(-45deg, #1530b7 10%, #56a7e6 60%, #56a7e6 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.list-3__step h4 {
+  font-family: "Caveat";
+  font-size: 0.8rem;
+}
+.list-3 article ul {
+  font-family: "Caveat";
+  font-size: 0.8rem;
+}
+.list-3__footer {
+  font-family: "Dancing Script";
+  font-size: 1.1rem;
+}
+@media all and (min-width: 1440px) {
+  .list-3__header {
+    font-size: 2.2rem;
+  }
+  .list-3__step h4 {
+    font-size: 1.4rem;
+  }
+  .list-3 article ul {
+    font-size: 1.6rem;
+  }
+  .list-3__footer {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .list-3__header {
+    font-size: 2rem;
+  }
+  .list-3__step h4 {
+    font-size: 1.4rem;
+  }
+  .list-3 article ul {
+    font-size: 1.44rem;
+  }
+  .list-3__footer {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .list-3__header {
+    font-size: 1.5rem;
+  }
+  .list-3__step h4 {
+    font-size: 1.2rem;
+  }
+  .list-3 article ul {
+    font-size: 1.12rem;
+  }
+  .list-3__footer {
+    font-size: 1.4rem;
+  }
+}
+@media all and (max-width: 360px) {
+  .list-3__header {
+    font-size: 0.8rem;
+  }
+}
+
+.list-4 {
+  background-color: #fdfffc;
+  box-shadow: 0.5px 0.5px 8px #d6d6d6;
+  width: 18rem;
+  margin: 0 auto 2rem auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.list-4__header {
+  text-align: center;
+}
+.list-4__header h3 {
+  margin: 0;
+}
+.list-4__ico {
+  width: 2.5rem;
+  height: 100%;
+  margin-top: 1rem;
+}
+.list-4__step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.list-4__step img {
+  width: 6rem;
+  height: 100%;
+}
+.list-4__step h4 {
+  margin: 0;
+  text-align: center;
+}
+.list-4 article {
+  margin-top: 1.5rem;
+}
+.list-4 article ul {
+  list-style: none;
+  padding: 0;
+}
+.list-4 article li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  padding: 0;
+}
+.list-4 .item {
+  margin: 0;
+}
+.list-4 .price {
+  margin: 0;
+  font-weight: bold;
+}
+.list-4__footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.list-4__footer img {
+  width: 1.5rem;
+}
+@media all and (min-width: 1440px) {
+  .list-4 {
+    width: 50rem;
+    height: 72rem;
+  }
+  .list-4__ico {
+    width: 4rem;
+  }
+  .list-4 article {
+    margin-top: 5rem;
+  }
+  .list-4__step img {
+    width: 10rem;
+  }
+  .list-4 ul {
+    margin-top: 2rem;
+  }
+  .list-4 li {
+    margin-top: 1.3rem;
+  }
+  .list-4__footer img {
+    transform: translateY(0.7rem);
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .list-4 {
+    width: 50rem;
+    height: 72rem;
+  }
+  .list-4__ico {
+    width: 3rem;
+  }
+  .list-4 article {
+    margin-top: 5rem;
+  }
+  .list-4__step img {
+    width: 10rem;
+  }
+  .list-4 ul {
+    margin-top: 2rem;
+  }
+  .list-4 li {
+    margin-top: 1.3rem;
+  }
+  .list-4__footer img {
+    transform: translateY(0.7rem);
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .list-4 {
+    width: 31rem;
+    height: 45rem;
+  }
+  .list-4 article {
+    margin-top: 3rem;
+  }
+  .list-4__step img {
+    width: 8rem;
+  }
+  .list-4__footer img {
+    transform: translateY(0.5rem);
+  }
+}
+@media all and (max-width: 360px) {
+  .list-4 {
+    width: 12rem;
+  }
+  .list-4__ico {
+    width: 2rem;
+  }
+  .list-4 article li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .list-4__step img {
+    width: 4rem;
+  }
+}
+@media all and (max-width: 260px) {
+  .list-4 {
+    width: 4rem;
+  }
+  .list-4__ico {
+    width: 1.5rem;
+  }
+  .list-4__step img {
+    width: 1rem;
+  }
+}
+
+.list-4__header {
+  font-family: "Kaushan Script";
+  font-size: 1rem;
+  background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.list-4__step h4 {
+  font-family: "Caveat";
+  font-size: 0.8rem;
+}
+.list-4 article ul {
+  font-family: "Caveat";
+  font-size: 0.8rem;
+}
+.list-4__footer {
+  font-family: "Kaushan Script";
+  font-size: 1.1rem;
+}
+@media all and (min-width: 1440px) {
+  .list-4__header {
+    font-size: 2.2rem;
+  }
+  .list-4__step h4 {
+    font-size: 1.4rem;
+  }
+  .list-4 article ul {
+    font-size: 1.6rem;
+  }
+  .list-4__footer {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .list-4__header {
+    font-size: 2rem;
+  }
+  .list-4__step h4 {
+    font-size: 1.4rem;
+  }
+  .list-4 article ul {
+    font-size: 1.44rem;
+  }
+  .list-4__footer {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .list-4__header {
+    font-size: 1.5rem;
+  }
+  .list-4__step h4 {
+    font-size: 1.2rem;
+  }
+  .list-4 article ul {
+    font-size: 1.12rem;
+  }
+  .list-4__footer {
+    font-size: 1.4rem;
+  }
+}
+@media all and (max-width: 360px) {
+  .list-4__header {
     font-size: 0.8rem;
   }
 }
