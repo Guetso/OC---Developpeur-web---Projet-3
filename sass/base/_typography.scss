@@ -1,7 +1,11 @@
+// Polices générales
 #main_header {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
   font-weight: 600;
   font-size: 1rem;
+  @media all and (min-height: 1200px) {
+    font-size: 1.5rem;
+  }
   letter-spacing: -0.2rem;
 }
 
@@ -23,5 +27,97 @@
     font-family: "Montserrat", sans-serif, Arial, Helvetica;
     font-weight: 400;
     font-size: 1.1rem;
+  }
+}
+// Police de la page accueil : cf. variables.scss
+
+// Police des pages "restaurant"
+
+.list {
+  &__header {
+    font-family: map-get($map: $font-menu__titre, $key: 1);
+    font-size: 1.2rem;
+  }
+}
+
+.bloc_titre {
+  h4 {
+    font-family: map-get($map: $font-list, $key: 1);
+    font-size: 0.8rem;
+  }
+}
+
+article {
+  ul {
+    font-family: map-get($map: $font-list, $key: 1);
+    font-size: 0.5rem;
+  }
+}
+
+.list_footer {
+  font-family: map-get($map: $font-menu__titre, $key: 1);
+  font-size: 1.1rem;
+}
+
+@media all and (min-width: 1440px) {
+  .list {
+    &__header {
+      font-size: 1.6rem;
+    }
+  }
+  .bloc_titre {
+    h4 {
+      font-size: 1.4rem;
+    }
+  }
+  article {
+    ul {
+      font-size: 1rem;
+    }
+  }
+  .list_footer {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .list {
+    &__header {
+      font-size: 1.6rem;
+    }
+  }
+  .bloc_titre {
+    h4 {
+      font-size: 1.4rem;
+    }
+  }
+  article {
+    ul {
+      font-size: 1rem;
+    }
+  }
+  .list_footer {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .list {
+    &__header {
+      font-size: 1.5rem;
+    }
+  }
+  .bloc_titre {
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+  article {
+    ul {
+      font-size: 0.8rem;
+    }
+  }
+  .list_footer {
+    font-size: 1.4rem;
   }
 }

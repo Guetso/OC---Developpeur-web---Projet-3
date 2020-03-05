@@ -7,8 +7,6 @@
   padding-right: 2rem;
   &__header {
     text-align: center;
-    font-family: map-get($map: $font-menu__titre, $key: 1);
-    font-size: 1.2rem;
     h3 {
       margin: 0;
     }
@@ -31,8 +29,6 @@
   }
   h4 {
     margin: 0;
-    font-family: map-get($map: $font-list, $key: 1);
-    font-size: 0.8rem;
     text-align: center;
   }
 }
@@ -41,8 +37,6 @@ article {
   margin-top: 1.5rem;
   ul {
     list-style: none;
-    font-family: map-get($map: $font-list, $key: 1);
-    font-size: 0.5rem;
     padding: 0;
   }
   li {
@@ -64,8 +58,6 @@ article {
 
 .list_footer {
   text-align: center;
-  font-family: map-get($map: $font-menu__titre, $key: 1);
-  font-size: 1.1rem;
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -74,38 +66,74 @@ article {
   }
 }
 
-@media all and (min-width: 1440px){
-  .list{
+@media all and (min-width: 1440px) {
+  .list {
     width: 50rem;
     height: 72rem;
+  }
+  article{
+    margin-top: 5rem;
   }
   .bloc_titre {
     img {
       width: 10rem;
     }
   }
+  ul{
+    margin-top: 2rem;
+  }
+  li{
+    margin-top: 2rem;
+  }
+  .list_footer{
+    img{
+      transform:translateY(0.7rem);
+    }
+  }
 }
 
-@media all and (min-width: 1024px) and (max-width:1439px){
-  .list{
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .list {
     width: 50rem;
     height: 72rem;
+  }
+  article{
+    margin-top: 5rem;
   }
   .bloc_titre {
     img {
       width: 10rem;
     }
   }
+  ul{
+    margin-top: 2rem;
+  }
+  li{
+    margin-top: 2rem;
+  }
+  .list_footer{
+    img{
+      transform:translateY(0.7rem);
+    }
+  }
 }
 
-@media all and (min-width: 768px) and (max-width:1023px){
-  .list{
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .list {
     width: 31rem;
     height: 45rem;
+  }
+  article{
+    margin-top: 3rem;
   }
   .bloc_titre {
     img {
       width: 8rem;
+    }
+  }
+  .list_footer{
+    img{
+      transform:translateY(0.5rem);
     }
   }
 }
@@ -128,7 +156,7 @@ article {
   }
 }
 
-@media all and (max-width: 260px){
+@media all and (max-width: 260px) {
   .list {
     width: 4rem;
   }

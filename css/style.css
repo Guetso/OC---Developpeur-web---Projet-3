@@ -25,6 +25,11 @@ body a {
   font-size: 1rem;
   letter-spacing: -0.2rem;
 }
+@media all and (min-height: 1200px) {
+  #main_header {
+    font-size: 1.5rem;
+  }
+}
 
 #menu_header h2 {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
@@ -43,6 +48,77 @@ body a {
   font-size: 1.1rem;
 }
 
+.list__header {
+  font-family: "Devonshire";
+  font-size: 1.2rem;
+}
+
+.bloc_titre h4 {
+  font-family: "Kalam";
+  font-size: 0.8rem;
+}
+
+article ul {
+  font-family: "Kalam";
+  font-size: 0.5rem;
+}
+
+.list_footer {
+  font-family: "Devonshire";
+  font-size: 1.1rem;
+}
+
+@media all and (min-width: 1440px) {
+  .list__header {
+    font-size: 1.6rem;
+  }
+
+  .bloc_titre h4 {
+    font-size: 1.4rem;
+  }
+
+  article ul {
+    font-size: 1rem;
+  }
+
+  .list_footer {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .list__header {
+    font-size: 1.6rem;
+  }
+
+  .bloc_titre h4 {
+    font-size: 1.4rem;
+  }
+
+  article ul {
+    font-size: 1rem;
+  }
+
+  .list_footer {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .list__header {
+    font-size: 1.5rem;
+  }
+
+  .bloc_titre h4 {
+    font-size: 1.2rem;
+  }
+
+  article ul {
+    font-size: 0.8rem;
+  }
+
+  .list_footer {
+    font-size: 1.4rem;
+  }
+}
 .btn {
   display: flex;
   justify-content: center;
@@ -92,6 +168,11 @@ body a {
   width: 1.5rem;
   height: 100%;
 }
+@media all and (min-width: 1023px) {
+  .menu__ico-1 img {
+    width: 4rem;
+  }
+}
 
 .menu__titre-1 {
   margin-top: 0;
@@ -102,6 +183,11 @@ body a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media all and (min-width: 1023px) {
+  .menu__titre-1 {
+    font-size: 1.8rem;
+  }
+}
 
 .menu__menu-1 {
   margin-top: 0;
@@ -110,6 +196,11 @@ body a {
   font-weight: 400;
   color: black;
   font-style: italic;
+}
+@media all and (min-width: 1023px) {
+  .menu__menu-1 {
+    font-size: 2.2rem;
+  }
 }
 
 .menu-2 {
@@ -149,6 +240,11 @@ body a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media all and (min-width: 1023px) {
+  .menu__titre-2 {
+    font-size: 1.6rem;
+  }
+}
 
 .menu__menu-2 {
   margin-top: 0;
@@ -157,6 +253,11 @@ body a {
   font-weight: 400;
   color: #c17624;
   font-style: normal;
+}
+@media all and (min-width: 1023px) {
+  .menu__menu-2 {
+    font-size: 2.2rem;
+  }
 }
 
 .menu-3 {
@@ -196,6 +297,11 @@ body a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media all and (min-width: 1023px) {
+  .menu__titre-3 {
+    font-size: 2rem;
+  }
+}
 
 .menu__menu-3 {
   margin-top: 0;
@@ -204,6 +310,11 @@ body a {
   font-weight: 400;
   color: #56a7e6;
   font-style: normal;
+}
+@media all and (min-width: 1023px) {
+  .menu__menu-3 {
+    font-size: 2.2rem;
+  }
 }
 
 .menu-4 {
@@ -243,6 +354,11 @@ body a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media all and (min-width: 1023px) {
+  .menu__titre-4 {
+    font-size: 1.8rem;
+  }
+}
 
 .menu__menu-4 {
   margin-top: 0;
@@ -251,6 +367,11 @@ body a {
   font-weight: 400;
   color: #77bf4f;
   font-style: normal;
+}
+@media all and (min-width: 1023px) {
+  .menu__menu-4 {
+    font-size: 2.2rem;
+  }
 }
 
 .list {
@@ -263,8 +384,6 @@ body a {
 }
 .list__header {
   text-align: center;
-  font-family: "Devonshire";
-  font-size: 1.2rem;
 }
 .list__header h3 {
   margin: 0;
@@ -287,8 +406,6 @@ body a {
 }
 .bloc_titre h4 {
   margin: 0;
-  font-family: "Kalam";
-  font-size: 0.8rem;
   text-align: center;
 }
 
@@ -297,8 +414,6 @@ article {
 }
 article ul {
   list-style: none;
-  font-family: "Kalam";
-  font-size: 0.5rem;
   padding: 0;
 }
 article li {
@@ -319,8 +434,6 @@ article li {
 
 .list_footer {
   text-align: center;
-  font-family: "Devonshire";
-  font-size: 1.1rem;
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -335,8 +448,24 @@ article li {
     height: 72rem;
   }
 
+  article {
+    margin-top: 5rem;
+  }
+
   .bloc_titre img {
     width: 10rem;
+  }
+
+  ul {
+    margin-top: 2rem;
+  }
+
+  li {
+    margin-top: 2rem;
+  }
+
+  .list_footer img {
+    transform: translateY(0.7rem);
   }
 }
 @media all and (min-width: 1024px) and (max-width: 1439px) {
@@ -345,8 +474,24 @@ article li {
     height: 72rem;
   }
 
+  article {
+    margin-top: 5rem;
+  }
+
   .bloc_titre img {
     width: 10rem;
+  }
+
+  ul {
+    margin-top: 2rem;
+  }
+
+  li {
+    margin-top: 2rem;
+  }
+
+  .list_footer img {
+    transform: translateY(0.7rem);
   }
 }
 @media all and (min-width: 768px) and (max-width: 1023px) {
@@ -355,8 +500,16 @@ article li {
     height: 45rem;
   }
 
+  article {
+    margin-top: 3rem;
+  }
+
   .bloc_titre img {
     width: 8rem;
+  }
+
+  .list_footer img {
+    transform: translateY(0.5rem);
   }
 }
 @media all and (max-width: 360px) {

@@ -38,6 +38,9 @@
       img {
         width: 1.5rem;
         height: 100%;
+        @media all and (min-width: 1023px) {
+          width: 4rem;
+        }
       }
     }
   }
@@ -49,6 +52,9 @@
       margin-top: 0;
       font-family: map-get($map: $font-menu__titre, $key: $num-font);
       font-size: $font-size;
+      @media all and (min-width: 1023px) {
+        font-size: $font-size*2;
+      }
       font-weight: $font-weight;
       background: -webkit-linear-gradient(
         -45deg,
@@ -67,6 +73,9 @@
       margin-top: 0;
       font-family: $fontfam-menu;
       font-size: $font-size;
+      @media all and (min-width: 1023px) {
+        font-size: $font-size*2;
+      }
       font-weight: $font-weight;
       color: map-get($map: $color-menu__menu, $key: $color);
       font-style: $font-style;
