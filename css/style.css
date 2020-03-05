@@ -165,7 +165,7 @@ body a {
   font-family: "Kurale";
   font-size: 0.8rem;
   font-weight: 600;
-  background: -webkit-linear-gradient(-45deg, #f18023 10%, #A6669A 60%, #6b30eb 80%);
+  background: -webkit-linear-gradient(-45deg, #d17122 10%, #A6669A 60%, #6b30eb 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -383,7 +383,7 @@ body a {
     margin-top: 2rem;
   }
   .list-1 li {
-    margin-top: 2rem;
+    margin-top: 1.3rem;
   }
   .list-1__footer img {
     transform: translateY(0.7rem);
@@ -407,7 +407,7 @@ body a {
     margin-top: 2rem;
   }
   .list-1 li {
-    margin-top: 2rem;
+    margin-top: 1.3rem;
   }
   .list-1__footer img {
     transform: translateY(0.7rem);
@@ -469,7 +469,25 @@ body a {
 }
 .list-1 article ul {
   font-family: "Kalam";
-  font-size: 0.5rem;
+  font-size: 0.6rem;
+}
+.list-1 article:nth-of-type(1) ul {
+  color: black;
+}
+.list-1 article:nth-of-type(2) ul {
+  color: black;
+}
+.list-1 article:nth-of-type(3) ul {
+  color: black;
+}
+.list-1 article:nth-of-type(1) h4 {
+  color: black;
+}
+.list-1 article:nth-of-type(2) h4 {
+  color: black;
+}
+.list-1 article:nth-of-type(3) h4 {
+  color: black;
 }
 .list-1__footer {
   font-family: "Devonshire";
@@ -483,7 +501,7 @@ body a {
     font-size: 1.4rem;
   }
   .list-1 article ul {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .list-1__footer {
     font-size: 1.5rem;
@@ -497,7 +515,7 @@ body a {
     font-size: 1.4rem;
   }
   .list-1 article ul {
-    font-size: 1rem;
+    font-size: 1.08rem;
   }
   .list-1__footer {
     font-size: 1.5rem;
@@ -511,10 +529,15 @@ body a {
     font-size: 1.2rem;
   }
   .list-1 article ul {
-    font-size: 0.8rem;
+    font-size: 0.84rem;
   }
   .list-1__footer {
     font-size: 1.4rem;
+  }
+}
+@media all and (max-width: 360px) {
+  .list-1__header {
+    font-size: 0.8rem;
   }
 }
 
@@ -598,7 +621,7 @@ body a {
     margin-top: 2rem;
   }
   .list-2 li {
-    margin-top: 2rem;
+    margin-top: 1.3rem;
   }
   .list-2__footer img {
     transform: translateY(0.7rem);
@@ -622,7 +645,7 @@ body a {
     margin-top: 2rem;
   }
   .list-2 li {
-    margin-top: 2rem;
+    margin-top: 1.3rem;
   }
   .list-2__footer img {
     transform: translateY(0.7rem);
@@ -674,17 +697,35 @@ body a {
 .list-2__header {
   font-family: "Kurale";
   font-size: 1rem;
-  background: -webkit-linear-gradient(-45deg, #f18023 10%, #A6669A 60%, #6b30eb 80%);
+  background: -webkit-linear-gradient(-45deg, #d17122 10%, #A6669A 60%, #6b30eb 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .list-2__step h4 {
-  font-family: "Kalam";
+  font-family: "Crimson Text";
   font-size: 0.8rem;
 }
 .list-2 article ul {
-  font-family: "Kalam";
+  font-family: "Crimson Text";
   font-size: 0.5rem;
+}
+.list-2 article:nth-of-type(1) ul {
+  color: #d17122;
+}
+.list-2 article:nth-of-type(2) ul {
+  color: #A6669A;
+}
+.list-2 article:nth-of-type(3) ul {
+  color: #6b30eb;
+}
+.list-2 article:nth-of-type(1) h4 {
+  color: #d17122;
+}
+.list-2 article:nth-of-type(2) h4 {
+  color: #A6669A;
+}
+.list-2 article:nth-of-type(3) h4 {
+  color: #6b30eb;
 }
 .list-2__footer {
   font-family: "Kurale";
@@ -712,7 +753,7 @@ body a {
     font-size: 1.4rem;
   }
   .list-2 article ul {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .list-2__footer {
     font-size: 1.5rem;
@@ -726,10 +767,15 @@ body a {
     font-size: 1.2rem;
   }
   .list-2 article ul {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .list-2__footer {
     font-size: 1.4rem;
+  }
+}
+@media all and (max-width: 360px) {
+  .list-2__header {
+    font-size: 0.8rem;
   }
 }
 

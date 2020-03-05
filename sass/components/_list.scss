@@ -1,5 +1,5 @@
 @include list (1,1); // "LIST" // #N° du menu / #backgroundcolor //
-@include list-font(1,1,1,1,1,1);// "FONT-LIST" // #N° du menu / #police header&footer / #police plats / #couleur*2//
+@include list-font(1,1,1,1rem,0.6rem,1,1,1);// "FONT-LIST" // #N° du menu / #font header&footer / #font "plats"/ #size title / #size "plats" /#couleur*3//
 
 @include list (2,2);
-@include list-font(2,2,1,2,2,2);
+@include list-font(2,2,2,1rem,0.5rem,2,2,2);

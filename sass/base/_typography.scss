@@ -33,17 +33,17 @@
 
 // Police des pages "restaurant" : cf. variables.scss
 
-@mixin list-font($num-menu, $num-font1, $num-font2, $color1, $color2, $color3) {
+@mixin list-font($num-menu, $num-font1, $num-font2, $size-title-font, $size-ul-font, $color1, $color2, $color3) {
   .list {
     &-#{$num-menu} {
       &__header {
         font-family: map-get($map: $font-menu__titre, $key: $num-font1);
-        font-size: 1rem;
+        font-size: $size-title-font;
         background: -webkit-linear-gradient(
           -45deg,
-          map-get($map: $color1-menu__titre, $key: $color1)10%,
-          map-get($map: $color2-menu__titre, $key: $color2)60%,
-          map-get($map: $color3-menu__titre, $key: $color3)80%
+          map-get($map: $color1-menu__titre, $key: $color1) 10%,
+          map-get($map: $color2-menu__titre, $key: $color2) 60%,
+          map-get($map: $color3-menu__titre, $key: $color3) 80%
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -55,11 +55,40 @@
           font-size: 0.8rem;
         }
       }
-
       article {
         ul {
           font-family: map-get($map: $font-list, $key: $num-font2);
-          font-size: 0.5rem;
+          font-size: $size-ul-font;
+        }
+        &:nth-of-type(1) {
+          ul {
+            color: map-get($map: $color1-menu__titre, $key: $color1);
+          }
+        }
+        &:nth-of-type(2) {
+          ul {
+            color: map-get($map: $color2-menu__titre, $key: $color2);
+          }
+        }
+        &:nth-of-type(3) {
+          ul {
+            color: map-get($map: $color3-menu__titre, $key: $color3);
+          }
+        }
+        &:nth-of-type(1) {
+          h4 {
+            color: map-get($map: $color1-menu__titre, $key: $color1);
+          }
+        }
+        &:nth-of-type(2) {
+          h4 {
+            color: map-get($map: $color2-menu__titre, $key: $color2);
+          }
+        }
+        &:nth-of-type(3) {
+          h4 {
+            color: map-get($map: $color3-menu__titre, $key: $color3);
+          }
         }
       }
 
@@ -69,8 +98,8 @@
       }
 
       @media all and (min-width: 1440px) {
-          &__header {
-            font-size: 2.2rem;
+        &__header {
+          font-size: 2.2rem;
         }
         &__step {
           h4 {
@@ -79,7 +108,7 @@
         }
         article {
           ul {
-            font-size: 1rem;
+            font-size: 2 * $size-ul-font;
           }
         }
         &__footer {
@@ -88,8 +117,8 @@
       }
 
       @media all and (min-width: 1024px) and (max-width: 1439px) {
-          &__header {
-            font-size: 2rem;
+        &__header {
+          font-size: 2rem;
         }
         &__step {
           h4 {
@@ -98,7 +127,7 @@
         }
         article {
           ul {
-            font-size: 1rem;
+            font-size: 1.8 * $size-ul-font;
           }
         }
         &__footer {
@@ -107,8 +136,8 @@
       }
 
       @media all and (min-width: 768px) and (max-width: 1023px) {
-          &__header {
-            font-size: 1.5rem;
+        &__header {
+          font-size: 1.5rem;
         }
         &__step {
           h4 {
@@ -117,11 +146,16 @@
         }
         article {
           ul {
-            font-size: 0.8rem;
+            font-size: 1.4 * $size-ul-font;
           }
         }
         &__footer {
           font-size: 1.4rem;
+        }
+      }
+      @media all and (max-width: 360px) {
+        &__header {
+          font-size: $size-title-font/1.25;
         }
       }
     }
