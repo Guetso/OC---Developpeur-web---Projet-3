@@ -31,93 +31,99 @@
 }
 // Police de la page accueil : cf. variables.scss
 
-// Police des pages "restaurant"
+// Police des pages "restaurant" : cf. variables.scss
 
-.list {
-  &__header {
-    font-family: map-get($map: $font-menu__titre, $key: 1);
-    font-size: 1.2rem;
-  }
-}
-
-.bloc_titre {
-  h4 {
-    font-family: map-get($map: $font-list, $key: 1);
-    font-size: 0.8rem;
-  }
-}
-
-article {
-  ul {
-    font-family: map-get($map: $font-list, $key: 1);
-    font-size: 0.5rem;
-  }
-}
-
-.list_footer {
-  font-family: map-get($map: $font-menu__titre, $key: 1);
-  font-size: 1.1rem;
-}
-
-@media all and (min-width: 1440px) {
+@mixin list-font($num-menu, $num-font1, $num-font2, $color1, $color2, $color3) {
   .list {
-    &__header {
-      font-size: 1.6rem;
-    }
-  }
-  .bloc_titre {
-    h4 {
-      font-size: 1.4rem;
-    }
-  }
-  article {
-    ul {
-      font-size: 1rem;
-    }
-  }
-  .list_footer {
-    font-size: 1.5rem;
-  }
-}
+    &-#{$num-menu} {
+      &__header {
+        font-family: map-get($map: $font-menu__titre, $key: $num-font1);
+        font-size: 1rem;
+        background: -webkit-linear-gradient(
+          -45deg,
+          map-get($map: $color1-menu__titre, $key: $color1)10%,
+          map-get($map: $color2-menu__titre, $key: $color2)60%,
+          map-get($map: $color3-menu__titre, $key: $color3)80%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
 
-@media all and (min-width: 1024px) and (max-width: 1439px) {
-  .list {
-    &__header {
-      font-size: 1.6rem;
-    }
-  }
-  .bloc_titre {
-    h4 {
-      font-size: 1.4rem;
-    }
-  }
-  article {
-    ul {
-      font-size: 1rem;
-    }
-  }
-  .list_footer {
-    font-size: 1.5rem;
-  }
-}
+      &__step {
+        h4 {
+          font-family: map-get($map: $font-list, $key: $num-font2);
+          font-size: 0.8rem;
+        }
+      }
 
-@media all and (min-width: 768px) and (max-width: 1023px) {
-  .list {
-    &__header {
-      font-size: 1.5rem;
+      article {
+        ul {
+          font-family: map-get($map: $font-list, $key: $num-font2);
+          font-size: 0.5rem;
+        }
+      }
+
+      &__footer {
+        font-family: map-get($map: $font-menu__titre, $key: $num-font1);
+        font-size: 1.1rem;
+      }
+
+      @media all and (min-width: 1440px) {
+          &__header {
+            font-size: 2.2rem;
+        }
+        &__step {
+          h4 {
+            font-size: 1.4rem;
+          }
+        }
+        article {
+          ul {
+            font-size: 1rem;
+          }
+        }
+        &__footer {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media all and (min-width: 1024px) and (max-width: 1439px) {
+          &__header {
+            font-size: 2rem;
+        }
+        &__step {
+          h4 {
+            font-size: 1.4rem;
+          }
+        }
+        article {
+          ul {
+            font-size: 1rem;
+          }
+        }
+        &__footer {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media all and (min-width: 768px) and (max-width: 1023px) {
+          &__header {
+            font-size: 1.5rem;
+        }
+        &__step {
+          h4 {
+            font-size: 1.2rem;
+          }
+        }
+        article {
+          ul {
+            font-size: 0.8rem;
+          }
+        }
+        &__footer {
+          font-size: 1.4rem;
+        }
+      }
     }
-  }
-  .bloc_titre {
-    h4 {
-      font-size: 1.2rem;
-    }
-  }
-  article {
-    ul {
-      font-size: 0.8rem;
-    }
-  }
-  .list_footer {
-    font-size: 1.4rem;
   }
 }

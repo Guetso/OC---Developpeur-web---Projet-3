@@ -46,7 +46,7 @@
   }
 }
 
-@mixin menu__titre($num-menu, $num-font, $font-size, $font-weight, $color1, $color2) {
+@mixin menu__titre($num-menu, $num-font, $font-size, $font-weight, $color1, $color2, $color3) {
   .menu__titre {
     &-#{$num-menu} {
       margin-top: 0;
@@ -58,8 +58,9 @@
       font-weight: $font-weight;
       background: -webkit-linear-gradient(
         -45deg,
-        map-get($map: $color1-menu__titre, $key: $color1) 10%,
-        map-get($map: $color2-menu__titre, $key: $color2)
+        map-get($map: $color1-menu__titre, $key: $color1)10%,
+        map-get($map: $color2-menu__titre, $key: $color2)60%,
+        map-get($map: $color3-menu__titre, $key: $color3)80%
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
