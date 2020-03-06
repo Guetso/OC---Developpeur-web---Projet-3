@@ -7,7 +7,10 @@ body {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
   font-weight: 600;
   font-size: 1rem;
-  @media all and (min-height: 1200px) {
+  @media all and (min-height: 1000px) {
+    font-size: 1.5rem;
+  }
+  @media all and (min-height: 1000px) {
     font-size: 1.5rem;
   }
   letter-spacing: -0.2rem;
@@ -24,6 +27,12 @@ body {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
   font-weight: 500;
   font-size: 0.9rem;
+  @media all and (min-height: 1000px) {
+    font-size: 1.5rem;
+  }
+  @media all and (min-height: 1000px) {
+    font-size: 1.5rem;
+  }
 }
 
 .btn {

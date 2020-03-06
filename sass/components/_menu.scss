@@ -1,5 +1,5 @@
 @include menu(1, 1); // "CADRE MENU" // #N° du menu / #backgroundcolor //
-@include menu__titre(1,1,0.9rem,400,1,1,1); // "NOM RESTAURANT" // N° du menu / #fontfamily /  font-size / font-weight / color*3 //
+@include menu__titre(1,1,1rem,400,1,1,1); // "NOM RESTAURANT" // N° du menu / #fontfamily /  font-size / font-weight / color*3 //
 @include menu__menu(1,'Itim',1.1rem,400,1,italic); // "MENTION MENU" // N° du menu / #fontfamily /font-weight / color*2 / font-style //
 
 @include menu(2, 2);
@@ -11,5 +11,5 @@
 @include menu__menu(3,'Chilanka',1.1rem,400,3,normal);
 
 @include menu(4, 4);
-@include menu__titre(4,4,0.9rem,500,4,4,4);
+@include menu__titre(4,4,1rem,500,4,4,4);
 @include menu__menu(4,'Chilanka',1.1rem,400,4,normal);

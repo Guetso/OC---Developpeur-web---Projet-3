@@ -27,7 +27,12 @@ body {
   font-size: 1rem;
   letter-spacing: -0.2rem;
 }
-@media all and (min-height: 1200px) {
+@media all and (min-height: 1000px) {
+  #main_header {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-height: 1000px) {
   #main_header {
     font-size: 1.5rem;
   }
@@ -42,6 +47,16 @@ body {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
   font-weight: 500;
   font-size: 0.9rem;
+}
+@media all and (min-height: 1000px) {
+  #main_footer {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-height: 1000px) {
+  #main_footer {
+    font-size: 1.5rem;
+  }
 }
 
 .btn h2 {
@@ -68,7 +83,7 @@ body {
 
 .menu__titre-1 {
   font-family: "Devonshire";
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
   background: -webkit-linear-gradient(-45deg, black 10%, black 60%, black 80%);
   -webkit-background-clip: text;
@@ -77,6 +92,16 @@ body {
 @media all and (min-width: 1023px) {
   .menu__titre-1 {
     font-size: 1.8rem;
+  }
+}
+@media all and (min-height: 1000px) {
+  .menu__titre-1 {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 1017px) and (min-height: 1000px) {
+  .menu__titre-1 {
+    font-size: 2rem;
   }
 }
 
@@ -89,7 +114,17 @@ body {
 }
 @media all and (min-width: 1023px) {
   .menu__menu-1 {
-    font-size: 2.2rem;
+    font-size: 1.98rem;
+  }
+}
+@media all and (min-height: 1000px) {
+  .menu__menu-1 {
+    font-size: 1.65rem;
+  }
+}
+@media all and (min-width: 1017px) and (min-height: 1000px) {
+  .menu__menu-1 {
+    font-size: 1.98rem;
   }
 }
 
@@ -107,6 +142,16 @@ body {
 }
 @media all and (min-width: 1023px) {
   .menu__titre-2 {
+    font-size: 1.44rem;
+  }
+}
+@media all and (min-height: 1000px) {
+  .menu__titre-2 {
+    font-size: 1.2rem;
+  }
+}
+@media all and (min-width: 1017px) and (min-height: 1000px) {
+  .menu__titre-2 {
     font-size: 1.6rem;
   }
 }
@@ -120,7 +165,17 @@ body {
 }
 @media all and (min-width: 1023px) {
   .menu__menu-2 {
-    font-size: 2.2rem;
+    font-size: 1.98rem;
+  }
+}
+@media all and (min-height: 1000px) {
+  .menu__menu-2 {
+    font-size: 1.65rem;
+  }
+}
+@media all and (min-width: 1017px) and (min-height: 1000px) {
+  .menu__menu-2 {
+    font-size: 1.98rem;
   }
 }
 
@@ -138,6 +193,16 @@ body {
 }
 @media all and (min-width: 1023px) {
   .menu__titre-3 {
+    font-size: 1.8rem;
+  }
+}
+@media all and (min-height: 1000px) {
+  .menu__titre-3 {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 1017px) and (min-height: 1000px) {
+  .menu__titre-3 {
     font-size: 2rem;
   }
 }
@@ -151,7 +216,17 @@ body {
 }
 @media all and (min-width: 1023px) {
   .menu__menu-3 {
-    font-size: 2.2rem;
+    font-size: 1.98rem;
+  }
+}
+@media all and (min-height: 1000px) {
+  .menu__menu-3 {
+    font-size: 1.65rem;
+  }
+}
+@media all and (min-width: 1017px) and (min-height: 1000px) {
+  .menu__menu-3 {
+    font-size: 1.98rem;
   }
 }
 
@@ -161,7 +236,7 @@ body {
 
 .menu__titre-4 {
   font-family: "Kaushan Script";
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
   -webkit-background-clip: text;
@@ -170,6 +245,16 @@ body {
 @media all and (min-width: 1023px) {
   .menu__titre-4 {
     font-size: 1.8rem;
+  }
+}
+@media all and (min-height: 1000px) {
+  .menu__titre-4 {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 1017px) and (min-height: 1000px) {
+  .menu__titre-4 {
+    font-size: 2rem;
   }
 }
 
@@ -182,7 +267,17 @@ body {
 }
 @media all and (min-width: 1023px) {
   .menu__menu-4 {
-    font-size: 2.2rem;
+    font-size: 1.98rem;
+  }
+}
+@media all and (min-height: 1000px) {
+  .menu__menu-4 {
+    font-size: 1.65rem;
+  }
+}
+@media all and (min-width: 1017px) and (min-height: 1000px) {
+  .menu__menu-4 {
+    font-size: 1.98rem;
   }
 }
 
@@ -602,12 +697,17 @@ body {
   justify-content: center;
   align-items: stretch;
   box-shadow: 0.5px 0.5px 8px #d6d6d6;
+  opacity: 1;
+  transition: opacity 400ms;
 }
 @media all and (min-width: 1023px) {
   .menu {
-    height: 50vh;
-    width: 35vh;
+    height: 58vh;
+    width: 40vh;
   }
+}
+.menu:hover {
+  opacity: 0.7;
 }
 .menu a {
   display: flex;
@@ -616,6 +716,11 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.menu a:hover {
+  transform: scale(1.15);
 }
 
 .menu__ico {
@@ -632,9 +737,15 @@ body {
     width: 4rem;
   }
 }
+@media all and (min-width: 1017px) and (min-height: 1000px) {
+  .menu__ico img {
+    width: 4rem;
+  }
+}
 
 .menu__titre {
   margin-top: 0;
+  padding-left: 0.2rem;
 }
 
 .menu__menu {
