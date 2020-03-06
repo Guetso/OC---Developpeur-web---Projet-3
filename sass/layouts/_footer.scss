@@ -26,6 +26,9 @@
     align-items: center;
     text-align: center;
     height: 100%;
+    &:hover {
+      animation: wriggle 100ms cubic-bezier(.4,.1,.6,.9) 2; //Nom de la Keyframe, durée, timing,itération
+    }
   }
 }
 @media all and (max-width: 200px) {

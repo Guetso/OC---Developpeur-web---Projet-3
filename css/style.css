@@ -1,3 +1,11 @@
+@keyframes wriggle {
+  25% {
+    transform: translateX(3%);
+  }
+  75% {
+    transform: translateX(-3%);
+  }
+}
 body {
   margin: 0;
   height: 100vh;
@@ -651,6 +659,10 @@ body {
   align-items: center;
   text-align: center;
   height: 100%;
+}
+.legals a:hover,
+.contact a:hover {
+  animation: wriggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
 }
 
 @media all and (max-width: 200px) {
