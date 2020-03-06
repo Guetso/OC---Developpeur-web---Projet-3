@@ -1,0 +1,12 @@
+.center_page {   //Augmentation de la taille disponile sur les pages "list" car pas de section "soon"
+    &--legals {
+      min-height: 84.5%;
+      justify-content: flex-start;
+    }
+  }
+
+#legals{
+  width: 50%;
+  margin: 1rem auto 1rem auto;
+  text-align: center;
+}

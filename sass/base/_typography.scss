@@ -1,4 +1,8 @@
 // Polices générales
+body {
+  font-family: "Montserrat", sans-serif, Arial, Helvetica;
+}
+
 #main_header {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
   font-weight: 600;
@@ -33,7 +37,19 @@
 
 // Police des pages "restaurant" : cf. variables.scss
 
-@mixin list-font($num-menu, $num-font1, $num-font2, $size-title-font, $size-ul-font,$color1-title,$color2-title,$color3-title, $color1, $color2, $color3) {
+@mixin list-font(
+  $num-menu,
+  $num-font1,
+  $num-font2,
+  $size-title-font,
+  $size-ul-font,
+  $color1-title,
+  $color2-title,
+  $color3-title,
+  $color1,
+  $color2,
+  $color3
+) {
   .list {
     &-#{$num-menu} {
       &__header {
@@ -93,7 +109,8 @@
         }
       }
 
-      &__footer { //le footer ne concerne pour le moment que la carte de "La note enchantée"
+      &__footer {
+        //le footer ne concerne pour le moment que la carte de "La note enchantée"
         font-family: map-get($map: $font-menu__titre, $key: $num-font1);
         font-size: 1.1rem;
       }

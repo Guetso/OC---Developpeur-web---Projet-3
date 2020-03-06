@@ -1,7 +1,7 @@
 @import "./utils/variables";
 //variables
 @import "./utils/mixinsmenu";
-@import"./utils/mixinslist";
+@import "./utils/mixinslist";
 //functions
 //mixins
 @import "./base/base";
@@ -16,3 +16,4 @@
 //blocs BEM réutilisables
 @import "./pages/acceuil";
 @import "./pages/restaurant";
+@import "./pages/legals";
