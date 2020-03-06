@@ -29,7 +29,7 @@
     font-size: 1.1rem;
   }
 }
-// Police de la page accueil : cf. variables.scss
+// Police de la page accueil : cf. variables.scss // Pour le moment le choix des polices des menus de la page d'acceuil se fait directement dans "menu.scss"
 
 // Police des pages "restaurant" : cf. variables.scss
 
@@ -60,6 +60,7 @@
           font-family: map-get($map: $font-list, $key: $num-font2);
           font-size: $size-ul-font;
         }
+        //Dans le cas où la couleur des plats sur les menus, ainsi que leurs titres (entrées,plats,desserts), correspondent aux trois couleurs composant le titre du menu (cf."le chic à la française"
         &:nth-of-type(1) {
           ul {
             color: map-get($map: $color1-menu__titre, $key: $color1);
@@ -92,7 +93,7 @@
         }
       }
 
-      &__footer {
+      &__footer { //le footer ne concerne pour le moment que la carte de "La note enchantée"
         font-family: map-get($map: $font-menu__titre, $key: $num-font1);
         font-size: 1.1rem;
       }

@@ -1,4 +1,4 @@
-#section_menu {
+#section_menu { //Présentations des carte de l'accueil, élément du conteneur "center_page"
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -6,7 +6,7 @@
   padding-right: 3vh;
 }
 
-#soon {
+#soon { //conteneur du bouton "Prochainement de la page d'acceuil
   display: flex;
   justify-content: center;
   align-items: center;
