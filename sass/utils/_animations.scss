@@ -4,6 +4,52 @@
     transform: translateX($shake-intensity);
   }
   75% {
-    transform: translateX($shake-intensity*-1);
+    transform: translateX($shake-intensity * -1);
+  }
+}
+//Keyframes pour le bouton "soon"
+@keyframes prochainement {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-185px);
+    opacity: 0;
+  }
+}
+
+@keyframes points {
+  0% {
+    transform: translate(140px, -8px);
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  25% {
+    transform: translate(93px, 0);
+    opacity: 0;
+    animation-timing-function: linear;
+  }
+  50% {
+    transform: translate(47px, -8px);
+    opacity: 0.5;
+    animation-timing-function: linear;
+  }
+  75% {
+    transform: translate(0, 0);
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+  88% {
+    transform: translate(0, -8px);
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }

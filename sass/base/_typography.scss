@@ -41,6 +41,11 @@ body {
     font-weight: 400;
     font-size: 1.1rem;
   }
+  &--anim{
+    div{
+      font-size: 8rem;
+    }
+  }
 }
 // Police de la page accueil : cf. variables.scss // Pour le moment le choix des polices des menus de la page d'acceuil se fait directement dans "menu.scss"
 

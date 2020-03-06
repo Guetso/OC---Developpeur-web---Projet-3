@@ -1,4 +1,5 @@
-.btn { // Correspond à l'élément contenu dans la div "soon", est appelé "btn" car pourrait être réutilisé à cette fin
+.btn {
+  // Correspond à l'élément contenu dans la div "soon", est appelé "btn" car pourrait être réutilisé à cette fin
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,4 +9,29 @@
   height: 32px;
   max-height: 100%;
   border-radius: 0.5rem;
+  &--anim {
+    position: relative;
+    .dot {
+      display: none;
+      position: absolute;
+      bottom: -75%;
+      left: map-get($map: $place-dot, $key:1 );
+      animation: points $anim-dur both ;
+      @for $i from 1 through $num-dot{
+        &--#{$i}{
+          animation-delay: $anim-delay*$i;
+          left:map-get($map: $place-dot, $key:$i )
+        }
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      h2 {
+        animation: prochainement 1000ms forwards;
+      }
+      div {
+        display: block;
+      }
+    }
+  }
 }
