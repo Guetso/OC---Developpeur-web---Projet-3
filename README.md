@@ -22,6 +22,3 @@ Concevoir un site web de référencement de restaurants dans le cadre du parcour
         - ajouter un appel de mixin en attribuant les valeurs
      - Dans list.scss:
         - ajouter un appel de mixin en attribuant les valeurs
-TODO :
-- Màj de l'url du site et de l'image dans les meta OG dès que mis en ligne
-- Appliquer les webkit - vérifier si pas de conflit avec le webkit lineargradient appliqué manuellement
