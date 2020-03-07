@@ -50,6 +50,45 @@
     opacity: 1;
   }
 }
+@keyframes points1 {
+  0% {
+    transform: translate(140px, -8px);
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: translate(93px, -8px);
+    opacity: 0;
+    animation-timing-function: linear;
+  }
+  34% {
+    transform: translate(47px, 0);
+    opacity: 0.5;
+    animation-timing-function: linear;
+  }
+  51% {
+    transform: translate(0, -8px);
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+}
+@keyframes points2 {
+  68% {
+    transform: translate(0, 0);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  85% {
+    transform: translate(0, -7px);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
 body {
   margin: 0;
   height: 100vh;
@@ -117,7 +156,7 @@ body {
   font-size: 1.1rem;
 }
 .btn--anim div {
-  font-size: 8rem;
+  font-size: 7rem;
 }
 
 .btn {
@@ -137,20 +176,20 @@ body {
 .btn--anim .dot {
   display: none;
   position: absolute;
-  bottom: -75%;
+  bottom: -65%;
   left: 30%;
-  animation: points 500ms both;
+  animation: points1 300ms both, points2 600ms infinite;
 }
 .btn--anim .dot--1 {
-  animation-delay: 166.6666666667ms;
+  animation-delay: 100ms;
   left: 30%;
 }
 .btn--anim .dot--2 {
-  animation-delay: 333.3333333333ms;
+  animation-delay: 200ms;
   left: 45%;
 }
 .btn--anim .dot--3 {
-  animation-delay: 500ms;
+  animation-delay: 300ms;
   left: 60%;
 }
 .btn--anim:hover {

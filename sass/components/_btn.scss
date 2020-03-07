@@ -14,9 +14,9 @@
     .dot {
       display: none;
       position: absolute;
-      bottom: -75%;
+      bottom: -65%;
       left: map-get($map: $place-dot, $key: 1);
-      animation: points $anim-dur both;
+      animation: points1 $anim-dur both, points2 $anim-dur*2 infinite;
       @for $i from 1 through $num-dot {
         &--#{$i} {
           animation-delay: $anim-delay * $i;
