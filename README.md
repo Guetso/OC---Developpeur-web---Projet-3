@@ -4,7 +4,7 @@ Projet 3 OpenClassrooms
 Concevoir un site web de référencement de restaurants dans le cadre du parcours développeur web d'OpenClassrooms.
 
 - Procédure ajout d'un menu :
-
+    - Créer sa page html en y inscrivant le numéro correspondant dans les classes.
     - Dans index.html : Ajouter une balise en précisant son numéro:
     
     ```html
@@ -19,6 +19,8 @@ Concevoir un site web de référencement de restaurants dans le cadre du parcour
     - Dans variables.scss
         - ajouter les variables du nouveau menu dans les maps
     - Dans menu.scss:
+        - ajouter un appel de mixin en attribuant les valeurs
+     - Dans list.scss:
         - ajouter un appel de mixin en attribuant les valeurs
 TODO :
 - Màj de l'url du site et de l'image dans les meta OG dès que mis en ligne

@@ -1,11 +1,40 @@
-@include list (1,1); // "LIST" // #N° du menu / #backgroundcolor //
-@include list-font(1,1,1,1rem,0.6rem,1,1,1,1,1,1);// "FONT-LIST" // #N° du menu / #font header&footer / #font "plats"/ #size title / #size "plats" /#color-title*3/#color-"plats"*3//
+@include list(1, 1); //COULEUR DU BACKGROUND // #N° du menu , #backgroundcolor //
+@include list-font(
+  //POLICE DE LA CARTE
+    1,
+  //N° du menu
+    1,
+  //N° de la police du header & footer
+    1,
+  //N° de la police des plats
+    1rem,
+  //Taille de la police du titre
+    0.6rem,
+  //Taille de la police des plats
+    1,
+  //1ère couleur de la police du titre
+    1,
+  //2ème couleur de la police du titre
+    1,
+  //3ème couleur de la police du titre
+    1,
+  //1ère couleur de la police des plats
+    1,
+  //2ème couleur de la police des plats
+    1,
+  //3ème couleur de la police des plats
+    1,
+  //1ère couleur de la barre animée soulignant la catégorie de plats
+    1,
+  //2ème couleur de la barre animée soulignant la catégorie de plats
+    1 //3ème couleur de la barre animée soulignant la catégorie de plats
+);
 
-@include list (2,2);
-@include list-font(2,2,2,1rem,0.8rem,2,2,2,2,2,2);
+@include list(2, 2);
+@include list-font(2, 2, 2, 1rem, 0.8rem, 2, 2, 2, 2, 2, 2, 2, 2, 2);
 
-@include list (3,3);
-@include list-font(3,3,3,1rem,0.8rem,3,3,3,black,black,black); // Ici les couleurs des plats ne correspondent pas aux 3 couleurs du titre, remplacé par des couleurs noirs directement dans Include
+@include list(3, 3);
+@include list-font(3, 3, 3, 1rem, 0.8rem, 3, 3, 3, black, black, black, 3, 3, 3);
 
-@include list (4,4);
-@include list-font(4,4,4,1rem,0.8rem,4,4,4,black,black,black); // Idem
+@include list(4, 4);
+@include list-font(4, 4, 4, 1rem, 0.8rem, 4, 4, 4, black, black, black, 4, 4, 4);

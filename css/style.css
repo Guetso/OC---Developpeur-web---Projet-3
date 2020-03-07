@@ -19,37 +19,6 @@
     opacity: 0;
   }
 }
-@keyframes points {
-  0% {
-    transform: translate(140px, -8px);
-    opacity: 0;
-    animation-timing-function: ease-in;
-  }
-  25% {
-    transform: translate(93px, 0);
-    opacity: 0;
-    animation-timing-function: linear;
-  }
-  50% {
-    transform: translate(47px, -8px);
-    opacity: 0.5;
-    animation-timing-function: linear;
-  }
-  75% {
-    transform: translate(0, 0);
-    opacity: 1;
-    animation-timing-function: linear;
-  }
-  88% {
-    transform: translate(0, -8px);
-    opacity: 1;
-    animation-timing-function: linear;
-  }
-  100% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
 @keyframes points1 {
   0% {
     transform: translate(140px, -8px);
@@ -437,10 +406,19 @@ body {
 .list-1 article:nth-of-type(1) h4 {
   color: black;
 }
+.list-1 article:nth-of-type(1) h4::after {
+  color: black;
+}
 .list-1 article:nth-of-type(2) h4 {
   color: black;
 }
+.list-1 article:nth-of-type(2) h4::after {
+  color: black;
+}
 .list-1 article:nth-of-type(3) h4 {
+  color: black;
+}
+.list-1 article:nth-of-type(3) h4::after {
   color: black;
 }
 .list-1__footer {
@@ -526,10 +504,19 @@ body {
 .list-2 article:nth-of-type(1) h4 {
   color: #d17122;
 }
+.list-2 article:nth-of-type(1) h4::after {
+  color: #d17122;
+}
 .list-2 article:nth-of-type(2) h4 {
   color: #A6669A;
 }
+.list-2 article:nth-of-type(2) h4::after {
+  color: #A6669A;
+}
 .list-2 article:nth-of-type(3) h4 {
+  color: #6b30eb;
+}
+.list-2 article:nth-of-type(3) h4::after {
   color: #6b30eb;
 }
 .list-2__footer {
@@ -603,6 +590,15 @@ body {
   font-family: "Caveat";
   font-size: 0.8rem;
 }
+.list-3 article:nth-of-type(1) h4::after {
+  color: #1530b7;
+}
+.list-3 article:nth-of-type(2) h4::after {
+  color: #56a7e6;
+}
+.list-3 article:nth-of-type(3) h4::after {
+  color: #56a7e6;
+}
 .list-3__footer {
   font-family: "Dancing Script";
   font-size: 1.1rem;
@@ -673,6 +669,15 @@ body {
 .list-4 article ul {
   font-family: "Caveat";
   font-size: 0.8rem;
+}
+.list-4 article:nth-of-type(1) h4::after {
+  color: #55924d;
+}
+.list-4 article:nth-of-type(2) h4::after {
+  color: #c8fa80;
+}
+.list-4 article:nth-of-type(3) h4::after {
+  color: #c8fa80;
 }
 .list-4__footer {
   font-family: "Kaushan Script";
@@ -927,6 +932,19 @@ body {
 .list__step h4 {
   margin: 0;
   text-align: center;
+}
+.list__step h4:hover::after {
+  transform: scaleX(1);
+}
+.list__step h4::after {
+  content: "";
+  border-bottom: solid 3px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  transform: scaleX(0);
+  transition: 1s;
+  transform-origin: 0% 50%;
 }
 .list article {
   margin-top: 1.5rem;
