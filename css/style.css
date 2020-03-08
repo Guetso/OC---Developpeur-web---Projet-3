@@ -53,11 +53,6 @@ body {
     font-size: 1.5rem;
   }
 }
-@media all and (min-width: 1000px) {
-  #main_footer {
-    font-size: 1.5rem;
-  }
-}
 
 .btn h2 {
   font-family: "Montserrat", sans-serif, Arial, Helvetica;
@@ -198,7 +193,7 @@ body {
   font-family: "Kurale";
   font-size: 0.8rem;
   font-weight: 600;
-  background: -webkit-linear-gradient(-45deg, #d17122 10%, #A6669A 60%, #6b30eb 80%);
+  background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 60%, #6b30eb 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -492,7 +487,7 @@ body {
 .list-2__header {
   font-family: "Kurale";
   font-size: 1rem;
-  background: -webkit-linear-gradient(-45deg, #d17122 10%, #A6669A 60%, #6b30eb 80%);
+  background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 60%, #6b30eb 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -511,7 +506,7 @@ body {
   color: #d17122;
 }
 .list-2 article:nth-of-type(2) ul {
-  color: #A6669A;
+  color: #a6669a;
 }
 .list-2 article:nth-of-type(3) ul {
   color: #6b30eb;
@@ -523,10 +518,10 @@ body {
   color: #d17122;
 }
 .list-2 article:nth-of-type(2) h4 {
-  color: #A6669A;
+  color: #a6669a;
 }
 .list-2 article:nth-of-type(2) h4::after {
-  color: #A6669A;
+  color: #a6669a;
 }
 .list-2 article:nth-of-type(3) h4 {
   color: #6b30eb;
@@ -798,10 +793,12 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
+  text-shadow: 0;
+  transition: text-shadow 200ms ease-in;
 }
 #main_header h1:hover {
   color: #fff;
-  text-shadow: 0 0 150px #fff, 0 0 60px #fff, 0 0 10px #fff;
+  text-shadow: 0 0 150px #fcd267, 0 0 60px #fcd267, 0 0 10px #fcd267;
 }
 #main_header a {
   display: flex;

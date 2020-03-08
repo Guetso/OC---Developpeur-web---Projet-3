@@ -32,9 +32,6 @@ body {
   @media all and (min-height: 1000px) {
     font-size: 1.5rem;
   }
-  @media all and (min-width: 1000px) {
-    font-size: 1.5rem;
-  }
 }
 
 .btn {
@@ -43,7 +40,7 @@ body {
     font-weight: 400;
     font-size: 1.1rem;
     // MEDIA QUERIES ---------------------------------
-    @media all and (min-width:1017px) and (min-height:1000px){
+    @media all and (min-width: 1017px) and (min-height: 1000px) {
       font-size: 1.6rem;
     }
   }
@@ -51,15 +48,15 @@ body {
     div {
       font-size: 7rem;
       // MEDIA QUERIES ---------------------------------
-      @media all and (min-width:1017px) and (min-height:1000px){
+      @media all and (min-width: 1017px) and (min-height: 1000px) {
         font-size: 9rem;
       }
     }
   }
 }
-// Police de la page accueil : 
+// Police de la page accueil : cf. mixinsmenus.scss
 
-// Police des pages "restaurant" : 
+// Police des pages "restaurant" :
 
 @mixin list-font(
   $num-menu,

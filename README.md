@@ -17,7 +17,7 @@ Concevoir un site web de référencement de restaurants dans le cadre du parcour
             </article>
     ```
     - Dans variables.scss
-        - ajouter les variables du nouveau menu dans les maps
+        - ajouter les variables du nouveau menu dans les maps (3 couleurs,les polices)
     - Dans menu.scss:
         - ajouter un appel de mixin en attribuant les valeurs
      - Dans list.scss:

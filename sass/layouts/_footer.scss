@@ -1,4 +1,5 @@
-#main_footer { //footer présent sur toutes les pages
+#main_footer {
+  //footer présent sur toutes les pages
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -27,10 +28,11 @@
     text-align: center;
     height: 100%;
     &:hover {
-      animation: wiggle 250ms cubic-bezier(.4,.1,.6,.9) 3; //Nom de la Keyframe, durée, timing,itération
+      animation: wiggle 250ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 3; //Nom de la Keyframe, durée, timing,itération
     }
   }
 }
+// MEDIA QUERIES ---------------------------------
 @media all and (max-width: 200px) {
   #main_footer {
     flex-direction: column;
@@ -39,8 +41,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .legals
-  {
+  .legals {
     margin-top: 1rem;
   }
 }

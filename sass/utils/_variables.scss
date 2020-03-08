@@ -1,12 +1,7 @@
 // Couleurs de base
 $prim-color: #579c87;
 $secon-color: #fbcb4e;
-//Variables d'animation
-$shake-intensity:3%;
-$num-dot:3;
-$place-dot:(1:30%,2:45%,3:60%);
-$anim-dur:900ms;
-$anim-delay:$anim-dur/$num-dot;
+
 //Variables des menus
 $num-menu: (1 2 3 4);
 $bg-menu: (
@@ -29,7 +24,7 @@ $color1-menu__titre: (
 );
 $color2-menu__titre: (
   1: black,
-  2: #A6669A,
+  2: #a6669a,
   3: #56a7e6,
   4: #c8fa80
 );
@@ -45,9 +40,20 @@ $color-menu__menu: (
   3: #56a7e6,
   4: #77bf4f
 );
-$font-list:(
-  1:'Kalam',
-  2:'Crimson Text',
-  3:'Caveat',
-  4:'Caveat'
+$font-list: (
+  1: "Kalam",
+  2: "Crimson Text",
+  3: "Caveat",
+  4: "Caveat"
 );
+
+//Variables d'animation
+$shake-intensity: 3%;
+$num-dot: 3;
+$place-dot: (
+  1: 30%,
+  2: 45%,
+  3: 60%
+);
+$anim-dur: 900ms;
+$anim-delay: $anim-dur/$num-dot;
