@@ -21,12 +21,12 @@
 }
 @keyframes points1 {
   0% {
-    transform: translate(140px, -8px);
+    transform: translate(140px, -7px);
     opacity: 0;
     animation-timing-function: ease-in;
   }
   17% {
-    transform: translate(93px, -8px);
+    transform: translate(93px, -7px);
     opacity: 0;
     animation-timing-function: linear;
   }
@@ -36,7 +36,12 @@
     animation-timing-function: linear;
   }
   51% {
-    transform: translate(0, -8px);
+    transform: translate(15px, -7px);
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+  65% {
+    transform: translate(0, 0);
     opacity: 1;
     animation-timing-function: linear;
   }
@@ -147,25 +152,27 @@ body {
   position: absolute;
   bottom: -65%;
   left: 30%;
-  animation: points1 300ms both, points2 600ms infinite;
 }
 .btn--anim .dot--1 {
-  animation-delay: 100ms;
+  animation: points1 900ms both, points2 600ms infinite;
+  animation-delay: 100ms, 1000ms;
   left: 30%;
 }
 .btn--anim .dot--2 {
-  animation-delay: 200ms;
+  animation: points1 900ms both, points2 600ms infinite;
+  animation-delay: 400ms, 1100ms;
   left: 45%;
 }
 .btn--anim .dot--3 {
-  animation-delay: 300ms;
+  animation: points1 900ms both, points2 600ms infinite;
+  animation-delay: 700ms, 1200ms;
   left: 60%;
 }
 .btn--anim:hover, .btn--anim:active {
   cursor: pointer;
 }
 .btn--anim:hover h2, .btn--anim:active h2 {
-  animation: prochainement 1000ms forwards;
+  animation: prochainement 2000ms forwards;
 }
 .btn--anim:hover div, .btn--anim:active div {
   display: block;

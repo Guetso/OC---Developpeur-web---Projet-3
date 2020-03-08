@@ -16,18 +16,20 @@
       position: absolute;
       bottom: -65%;
       left: map-get($map: $place-dot, $key: 1);
-      animation: points1 $anim-dur both, points2 $anim-dur * 2 infinite;
+      //animation: points1 $anim-dur both, points2 $anim-dur * 2 infinite;;
       @for $i from 1 through $num-dot {
         &--#{$i} {
-          animation-delay: $anim-delay * $i;
+          animation: points1 $anim-dur both, points2 $anim-delay*2 infinite;
+          animation-delay: (($anim-delay * $i)-200), ($anim-dur+(100 * $i));
           left: map-get($map: $place-dot, $key: $i);
         }
       }
     }
-    &:hover,&:active {
+    &:hover,
+    &:active {
       cursor: pointer;
       h2 {
-        animation: prochainement 1000ms forwards;
+        animation: prochainement 2000ms forwards;
       }
       div {
         display: block;

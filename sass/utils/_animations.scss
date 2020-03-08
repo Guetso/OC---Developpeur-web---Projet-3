@@ -24,12 +24,12 @@
 //Keyframes pour le bouton "soon" -- "..."
 @keyframes points1 {
   0% {
-    transform: translate(140px, -8px);
+    transform: translate(140px, -7px);
     opacity: 0;
     animation-timing-function: ease-in;
   }
   17% {
-    transform: translate(93px, -8px);
+    transform: translate(93px, -7px);
     opacity: 0;
     animation-timing-function: linear;
   }
@@ -39,7 +39,12 @@
     animation-timing-function: linear;
   }
   51% {
-    transform: translate(0, -8px);
+    transform: translate(15px, -7px);
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+  65% {
+    transform: translate(0, 0);
     opacity: 1;
     animation-timing-function: linear;
   }
