@@ -1,5 +1,5 @@
 // Keyframes pour effet wriggle
-@keyframes wriggle {
+@keyframes shake {
   25% {
     transform: translateX($shake-intensity);
   }

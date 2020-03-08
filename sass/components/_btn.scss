@@ -24,7 +24,7 @@
         }
       }
     }
-    &:hover {
+    &:hover,&:active {
       cursor: pointer;
       h2 {
         animation: prochainement 1000ms forwards;
