@@ -24,9 +24,16 @@
         }
       }
     }
-    &:hover,
-    &:active {
+    &:hover {
       cursor: pointer;
+      h2 {
+        animation: prochainement 2000ms forwards;
+      }
+      div {
+        display: block;
+      }
+    }
+    @media handheld{
       h2 {
         animation: prochainement 2000ms forwards;
       }

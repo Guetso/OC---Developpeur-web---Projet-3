@@ -108,14 +108,22 @@ body {
   animation-delay: 700ms, 1200ms;
   left: 60%;
 }
-.btn--anim:hover, .btn--anim:active {
+.btn--anim:hover {
   cursor: pointer;
 }
-.btn--anim:hover h2, .btn--anim:active h2 {
+.btn--anim:hover h2 {
   animation: prochainement 2000ms forwards;
 }
-.btn--anim:hover div, .btn--anim:active div {
+.btn--anim:hover div {
   display: block;
+}
+@media handheld {
+  .btn--anim h2 {
+    animation: prochainement 2000ms forwards;
+  }
+  .btn--anim div {
+    display: block;
+  }
 }
 @media all and (min-width: 1017px) and (min-height: 1000px) {
   .btn {
