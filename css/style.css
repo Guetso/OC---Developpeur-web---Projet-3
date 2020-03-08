@@ -752,6 +752,10 @@ body {
   height: 100%;
   text-align: center;
 }
+#main_header h1:hover {
+  color: #fff;
+  text-shadow: 0 0 150px #fff, 0 0 60px #fff, 0 0 10px #fff;
+}
 #main_header a {
   display: flex;
   align-items: center;
