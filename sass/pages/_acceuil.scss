@@ -7,10 +7,6 @@
   //Aspect général d'un menu sur la page d'acceuil, voir "mixinsmenu" pour élément de personnalisation
   height: 31vh;
   width: 22vh;
-  @media all and (min-width: 1023px) {
-    height: 58vh;
-    width: 40vh;
-  }
   min-height: 8rem;
   min-width: 6rem;
   margin: 1.5vh 1vh 1.5vh 1vh;
@@ -21,7 +17,7 @@
   box-shadow: 0.5px 0.5px 8px rgb(214, 214, 214);
   opacity: 1;
   transition: opacity 400ms;
-  &:hover{
+  &:hover {
     opacity: 0.7;
   }
   a {
@@ -37,6 +33,11 @@
       transform: scale(1.15);
     }
   }
+  // MEDIA QUERIES ---------------------------------
+  @media all and (min-width: 1023px) {
+    height: 58vh;
+    width: 40vh;
+  }
 }
 
 .menu__ico {
@@ -46,11 +47,15 @@
   img {
     width: 1.5rem;
     height: 100%;
+    // MEDIA QUERIES ---------------------------------
     @media all and (min-width: 1023px) {
       width: 4rem;
     }
-    @media all and (min-width:1017px) and (min-height:1000px) {
+    @media all and (min-width: 1017px) and (min-height: 1000px) {
       width: 4rem;
+    }
+    @media all and (min-width: 1017px) and (min-height: 1200px) {
+      width: 6rem;
     }
   }
 }

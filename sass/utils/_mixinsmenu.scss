@@ -18,7 +18,10 @@
         font-size: $font-size * 1.5;
       }
       @media all and (min-width:1017px) and (min-height:1000px){
-        font-size: $font-size * 2;
+        font-size: $font-size * 2.5;
+      }
+      @media all and (min-width:1017px) and (min-height:1200px){
+        font-size: $font-size * 3;
       }
       font-weight: $font-weight;
       background: -webkit-linear-gradient(
@@ -45,7 +48,10 @@
         font-size: $font-size * 1.5;
       }
       @media all and (min-width:1017px) and (min-height:1000px){
-        font-size: $font-size * 1.8;
+        font-size: $font-size * 2
+      }
+      @media all and (min-width:1017px) and (min-height:1200px){
+        font-size: $font-size * 2.5;
       }
       font-weight: $font-weight;
       color: map-get($map: $color-menu__menu, $key: $color);

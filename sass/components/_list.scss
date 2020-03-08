@@ -1,13 +1,12 @@
 @include list(1, 1); //COULEUR DU BACKGROUND // #N° du menu , #backgroundcolor //
-@include list-font(
-  //POLICE DE LA CARTE
+@include list-font(//POLICE DE LA CARTE
     1,
   //N° du menu
     1,
   //N° de la police du header & footer
     1,
   //N° de la police des plats
-    1rem,
+    1.3rem,
   //Taille de la police du titre
     0.6rem,
   //Taille de la police des plats

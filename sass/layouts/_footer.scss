@@ -27,7 +27,7 @@
     text-align: center;
     height: 100%;
     &:hover {
-      animation: shake 250ms cubic-bezier(.4,.1,.6,.9) 3; //Nom de la Keyframe, durée, timing,itération
+      animation: wiggle 250ms cubic-bezier(.4,.1,.6,.9) 3; //Nom de la Keyframe, durée, timing,itération
     }
   }
 }

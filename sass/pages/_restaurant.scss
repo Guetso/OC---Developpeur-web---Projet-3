@@ -1,7 +1,6 @@
 .center_page {
-  //Augmentation de la taille disponile sur les pages "list" car pas de section "soon"
   &--list {
-    min-height: 84.5%;
+    min-height: 84.5%; //Augmentation de la taille disponile sur les pages "list" car pas de section "soon"
     justify-content: flex-start;
   }
 }
@@ -14,12 +13,6 @@
   }
 }
 
-.list__header {
-  h3 {
-    font-weight: normal;
-  }
-}
-
 .list {
   box-shadow: 0.5px 0.5px 8px rgb(214, 214, 214);
   width: 18rem;
@@ -28,6 +21,7 @@
   padding-right: 2rem;
   &__header {
     text-align: center;
+    margin: 0;
     h3 {
       margin: 0;
     }
@@ -41,7 +35,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    margin: 0;
     img {
       width: 6rem;
       height: 100%;
@@ -68,7 +62,7 @@
   }
 
   article {
-    margin-top: 1.5rem;
+    margin: 0;
     ul {
       list-style: none;
       padding: 0;
@@ -87,31 +81,33 @@
 
   .price {
     margin: 0;
-    font-weight: bold;
   }
 
   &__footer {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
     img {
       width: 1.5rem;
     }
   }
 
+  // MEDIA QUERIES ---------------------------------
+
   @media all and (min-width: 1440px) {
     width: 50rem;
     height: 72rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    article {
+      margin-top: 3.5rem;
+    }
     &__ico {
       width: 4rem;
     }
-    article {
-      margin-top: 5rem;
-    }
     &__step {
       img {
-        width: 10rem;
+        width: 15rem;
       }
     }
     ul {
@@ -122,7 +118,8 @@
     }
     &__footer {
       img {
-        transform: translateY(0.7rem);
+        transform: translateY(0.9rem);
+        width: 3rem;
       }
     }
   }
@@ -130,15 +127,17 @@
   @media all and (min-width: 1024px) and (max-width: 1439px) {
     width: 50rem;
     height: 72rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    article {
+      margin-top: 3.5rem;
+    }
     &__ico {
       width: 3rem;
     }
-    article {
-      margin-top: 5rem;
-    }
     &__step {
       img {
-        width: 10rem;
+        width: 15rem;
       }
     }
     ul {
@@ -149,20 +148,23 @@
     }
     &__footer {
       img {
-        transform: translateY(0.7rem);
+        transform: translateY(1rem);
+        width: 2.5rem;
       }
     }
   }
 
   @media all and (min-width: 768px) and (max-width: 1023px) {
-    width: 31rem;
-    height: 45rem;
+    width: 27rem;
+    height: 47rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     article {
-      margin-top: 3rem;
+      margin-top: 2.5rem;
     }
     &__step {
       img {
-        width: 8rem;
+        width: 10rem;
       }
     }
     &__footer {
@@ -171,7 +173,16 @@
       }
     }
   }
-
+  @media all and (max-width: 767px) {
+    article {
+      margin-top: 1.5rem;
+      li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
   @media all and (max-width: 360px) {
     width: 12rem;
     &__ico {
@@ -199,6 +210,13 @@
     &__step {
       img {
         width: 1rem;
+      }
+    }
+    &__footer {
+      flex-direction: column;
+      img {
+        width: 1.5rem;
+        transform: translate(1.3rem,1rem);
       }
     }
   }

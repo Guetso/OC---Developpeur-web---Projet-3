@@ -1,6 +1,5 @@
 @import "./utils/variables";
 //variables
-@import"./utils/animations";
 //functions
 @import "./utils/mixinsmenu";
 @import "./utils/mixinslist";
@@ -18,3 +17,4 @@
 @import "./pages/acceuil";
 @import "./pages/restaurant";
 @import "./pages/legals";
+@import "./utils/animations"; //On place les Keyframes en dernier pour des raisons d'optimisation
