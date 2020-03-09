@@ -166,7 +166,6 @@ body {
   font-size: 1rem;
   font-weight: 400;
   background: -webkit-linear-gradient(-45deg, black 10%, black 60%, black 80%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -228,7 +227,6 @@ body {
   font-size: 0.8rem;
   font-weight: 600;
   background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 60%, #6b30eb 80%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -290,7 +288,6 @@ body {
   font-size: 1rem;
   font-weight: 500;
   background: -webkit-linear-gradient(-45deg, #1530b7 10%, #56a7e6 60%, #56a7e6 80%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -352,7 +349,6 @@ body {
   font-size: 1rem;
   font-weight: 500;
   background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -413,7 +409,6 @@ body {
   font-family: "Devonshire";
   font-size: 1.3rem;
   background: -webkit-linear-gradient(-45deg, black 10%, black 60%, black 80%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -526,7 +521,6 @@ body {
   font-family: "Kurale";
   font-size: 1rem;
   background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 60%, #6b30eb 80%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -639,7 +633,6 @@ body {
   font-family: "Dancing Script";
   font-size: 1rem;
   background: -webkit-linear-gradient(-45deg, #1530b7 10%, #56a7e6 60%, #56a7e6 80%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -734,7 +727,6 @@ body {
   font-family: "Kaushan Script";
   font-size: 1rem;
   background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -834,7 +826,6 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  text-shadow: 0;
   transition: text-shadow 200ms ease-in;
 }
 #main_header h1:hover {
