@@ -7,7 +7,7 @@
     transform: translateX($shake-intensity * -1);
   }
 }
-//Keyframes pour le bouton "soon" --"Prochainement"
+//Keyframes pour le bouton "soon" --"Prochainement" -version desktop-
 @keyframes prochainement {
   0% {
     transform: translateX(0);
@@ -21,7 +21,14 @@
     opacity: 0;
   }
 }
-//Keyframes pour le bouton "soon" -- "..."
+//Keyframes pour le bouton "soon" --"Prochainement" -version mobile-
+@keyframes prochainementmob {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+//Keyframes pour le bouton "soon" -- "..." -version desktop-
 @keyframes points1 {
   0% {
     transform: translate(140px, -7px);
@@ -62,6 +69,52 @@
   }
   100% {
     transform: translate(0, 0);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
+
+//Keyframes pour le bouton "soon" -- "..." -version mobile-
+@keyframes points1mob {
+  0% {
+    transform: translate(140px, -26%);
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: translate(93px, -26%);
+    opacity: 0;
+    animation-timing-function: linear;
+  }
+  34% {
+    transform: translate(47px, -19%);
+    opacity: 0;
+    animation-timing-function: linear;
+  }
+  51% {
+    transform: translate(15px, -26%);
+    opacity: 0.5;
+    animation-timing-function: linear;
+  }
+  65% {
+    transform: translate(0, -19%);
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+}
+@keyframes points2mob {
+  68% {
+    transform: translate(0, -19%);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  85% {
+    transform: translate(0, -26%);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translate(0, -19%);
     opacity: 1;
     animation-timing-function: ease-out;
   }

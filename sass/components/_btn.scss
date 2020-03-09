@@ -10,41 +10,54 @@
   max-height: 100%;
   border-radius: 0.5rem;
   &--anim {
+    // MEDIA QUERIES ---------------------------------
+    @media all and (min-width: 901px) { // Animation du bouton "soon" pour desktop, l'animation d'active au survol
+      position: relative;
+      .dot {
+        display: none;
+        position: absolute;
+        bottom: -65%;
+        left: map-get($map: $place-dot, $key: 1);
+        @for $i from 1 through $num-dot {
+          &--#{$i} {
+            animation: points1 $anim-dur both, points2 $anim-delay * 2 infinite;
+            animation-delay: (($anim-delay * $i)-200), ($anim-dur + (100 * $i));
+            left: map-get($map: $place-dot, $key: $i);
+          }
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        h2 {
+          animation: prochainement 2000ms forwards;
+        }
+        div {
+          display: block;
+        }
+      }
+    }
+  }
+  @media all and (min-width: 1017px) and (min-height: 1000px) {// Agrandissement du bouton "soon" pour grands écrans
+    width: 250px;
+    height: 43px;
+  }
+  @media all and (max-width: 900px) { // Animation du bouton "soon" pour petits écrans (mobile) l'animation diffère légèrement et s'active dès le chargement
     position: relative;
+    cursor: pointer;
+    h2 {
+      transform: translateX(14%);
+      animation: prochainementmob 900ms 1000ms forwards;
+    }
     .dot {
-      display: none;
-      position: absolute;
-      bottom: -65%;
-      left: map-get($map: $place-dot, $key: 1);
       @for $i from 1 through $num-dot {
         &--#{$i} {
-          animation: points1 $anim-dur both, points2 $anim-delay * 2 infinite;
-          animation-delay: (($anim-delay * $i)-200), ($anim-dur + (100 * $i));
+          transform: translateY(-19%);
+          font-size: 3.5rem;
+          animation: points1mob $anim-dur both, points2mob $anim-delay * 2 infinite;
+          animation-delay: (($anim-delay * $i)+600ms), ($anim-dur + 900ms + (100 * $i));
           left: map-get($map: $place-dot, $key: $i);
         }
       }
     }
-    &:hover {
-      cursor: pointer;
-      h2 {
-        animation: prochainement 2000ms forwards;
-      }
-      div {
-        display: block;
-      }
-    }
-    @media handheld{
-      h2 {
-        animation: prochainement 2000ms forwards;
-      }
-      div {
-        display: block;
-      }
-    }
-  }
-  // MEDIA QUERIES ---------------------------------
-  @media all and (min-width: 1017px) and (min-height: 1000px) {
-    width: 250px;
-    height: 43px;
   }
 }

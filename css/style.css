@@ -84,44 +84,38 @@ body {
   max-height: 100%;
   border-radius: 0.5rem;
 }
-.btn--anim {
-  position: relative;
-}
-.btn--anim .dot {
-  display: none;
-  position: absolute;
-  bottom: -65%;
-  left: 30%;
-}
-.btn--anim .dot--1 {
-  animation: points1 900ms both, points2 600ms infinite;
-  animation-delay: 100ms, 1000ms;
-  left: 30%;
-}
-.btn--anim .dot--2 {
-  animation: points1 900ms both, points2 600ms infinite;
-  animation-delay: 400ms, 1100ms;
-  left: 45%;
-}
-.btn--anim .dot--3 {
-  animation: points1 900ms both, points2 600ms infinite;
-  animation-delay: 700ms, 1200ms;
-  left: 60%;
-}
-.btn--anim:hover {
-  cursor: pointer;
-}
-.btn--anim:hover h2 {
-  animation: prochainement 2000ms forwards;
-}
-.btn--anim:hover div {
-  display: block;
-}
-@media handheld {
-  .btn--anim h2 {
+@media all and (min-width: 901px) {
+  .btn--anim {
+    position: relative;
+  }
+  .btn--anim .dot {
+    display: none;
+    position: absolute;
+    bottom: -65%;
+    left: 30%;
+  }
+  .btn--anim .dot--1 {
+    animation: points1 900ms both, points2 600ms infinite;
+    animation-delay: 100ms, 1000ms;
+    left: 30%;
+  }
+  .btn--anim .dot--2 {
+    animation: points1 900ms both, points2 600ms infinite;
+    animation-delay: 400ms, 1100ms;
+    left: 45%;
+  }
+  .btn--anim .dot--3 {
+    animation: points1 900ms both, points2 600ms infinite;
+    animation-delay: 700ms, 1200ms;
+    left: 60%;
+  }
+  .btn--anim:hover {
+    cursor: pointer;
+  }
+  .btn--anim:hover h2 {
     animation: prochainement 2000ms forwards;
   }
-  .btn--anim div {
+  .btn--anim:hover div {
     display: block;
   }
 }
@@ -129,6 +123,37 @@ body {
   .btn {
     width: 250px;
     height: 43px;
+  }
+}
+@media all and (max-width: 900px) {
+  .btn {
+    position: relative;
+    cursor: pointer;
+  }
+  .btn h2 {
+    transform: translateX(14%);
+    animation: prochainementmob 900ms 1000ms forwards;
+  }
+  .btn .dot--1 {
+    transform: translateY(-19%);
+    font-size: 3.5rem;
+    animation: points1mob 900ms both, points2mob 600ms infinite;
+    animation-delay: 900ms, 1900ms;
+    left: 30%;
+  }
+  .btn .dot--2 {
+    transform: translateY(-19%);
+    font-size: 3.5rem;
+    animation: points1mob 900ms both, points2mob 600ms infinite;
+    animation-delay: 1200ms, 2000ms;
+    left: 45%;
+  }
+  .btn .dot--3 {
+    transform: translateY(-19%);
+    font-size: 3.5rem;
+    animation: points1mob 900ms both, points2mob 600ms infinite;
+    animation-delay: 1500ms, 2100ms;
+    left: 60%;
   }
 }
 
@@ -1194,6 +1219,11 @@ body {
     opacity: 0;
   }
 }
+@keyframes prochainementmob {
+  100% {
+    transform: translateX(0%);
+  }
+}
 @keyframes points1 {
   0% {
     transform: translate(140px, -7px);
@@ -1234,6 +1264,50 @@ body {
   }
   100% {
     transform: translate(0, 0);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes points1mob {
+  0% {
+    transform: translate(140px, -26%);
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: translate(93px, -26%);
+    opacity: 0;
+    animation-timing-function: linear;
+  }
+  34% {
+    transform: translate(47px, -19%);
+    opacity: 0;
+    animation-timing-function: linear;
+  }
+  51% {
+    transform: translate(15px, -26%);
+    opacity: 0.5;
+    animation-timing-function: linear;
+  }
+  65% {
+    transform: translate(0, -19%);
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+}
+@keyframes points2mob {
+  68% {
+    transform: translate(0, -19%);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  85% {
+    transform: translate(0, -26%);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translate(0, -19%);
     opacity: 1;
     animation-timing-function: ease-out;
   }
