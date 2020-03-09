@@ -9,7 +9,7 @@
   height: 32px;
   max-height: 100%;
   border-radius: 0.5rem;
-  &--anim {
+  &--anim { // Correspond au même élément mais avec une animation
     // MEDIA QUERIES ---------------------------------
     @media all and (min-width: 901px) { // Animation du bouton "soon" pour desktop, l'animation d'active au survol
       position: relative;
