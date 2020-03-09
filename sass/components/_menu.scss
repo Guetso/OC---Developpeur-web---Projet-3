@@ -5,40 +5,52 @@
     1,
   // N° du menu
     1,
-  // #fontfamily
+  // #color-1
+    1,
+  // #color-2
+    1 // #color-3
+);
+@include menu__titre--font(
+  1,
+  // N° du menu
+    1,
+  // #font-family
     1rem,
-  //  font-size
-    400,
-  // font-weight
-    1,
-  // color-1
-    1,
-  // color-2
-    1 // color-3
+  // font-size
+    400 // font-weight
 );
 @include menu__menu(
   // "MENTION MENU"
     1,
   // N° du menu
-    "Itim",
-  // #fontfamily
-    1.1rem,
-  //font-size
-    400,
-  //font-weight
     1,
   // color
+);
+@include menu__menu--font(
+  1,
+  // N° du menu
+    1,
+  // #font-family
+    1.1rem,
+  // font-size
+    400,
+  // font-weight
     italic // font-style
 );
-
 @include menu(2, 2);
-@include menu__titre(2, 2, 0.8rem, 600, 2, 2, 2);
-@include menu__menu(2, "Abril Fatface", 1.1rem, 400, 2, normal);
+@include menu__titre(2, 2, 2, 2);
+@include menu__titre--font(2, 2, 0.8rem, 600);
+@include menu__menu(2, 2);
+@include menu__menu--font(2, 2, 1.1rem, 400, normal);
 
 @include menu(3, 3);
-@include menu__titre(3, 3, 1rem, 500, 3, 3, 3);
-@include menu__menu(3, "Chilanka", 1.1rem, 400, 3, normal);
+@include menu__titre(3, 3, 3, 3);
+@include menu__titre--font(3, 3, 1rem, 500);
+@include menu__menu(3, 3);
+@include menu__menu--font(3, 3, 1.1rem, 400, normal);
 
 @include menu(4, 4);
-@include menu__titre(4, 4, 1rem, 500, 4, 4, 4);
-@include menu__menu(4, "Chilanka", 1.1rem, 400, 4, normal);
+@include menu__titre(4, 4, 4, 4);
+@include menu__titre--font(4, 4, 1rem, 500);
+@include menu__menu(4,4);
+@include menu__menu--font(4, 4, 1.1rem, 400, normal);

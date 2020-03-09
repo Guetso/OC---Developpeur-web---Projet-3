@@ -22,7 +22,3 @@ Concevoir un site web de référencement de restaurants dans le cadre du parcour
         - ajouter un appel de mixin en attribuant les valeurs
      - Dans list.scss:
         - ajouter un appel de mixin en attribuant les valeurs
-
-Pistes d'amélioration : 
-    - Distinguer les éléments typographiques des mixins "menu" (cf. mixins "list-font")
-    - Créer un scss "mixinstypographie" 
