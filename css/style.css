@@ -432,6 +432,8 @@ body {
 .list-1__header {
   font-family: "Devonshire";
   font-size: 1.3rem;
+}
+.list-1__title {
   background: -webkit-linear-gradient(-45deg, black 10%, black 60%, black 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -544,6 +546,8 @@ body {
 .list-2__header {
   font-family: "Kurale";
   font-size: 1rem;
+}
+.list-2__title {
   background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 60%, #6b30eb 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -656,6 +660,8 @@ body {
 .list-3__header {
   font-family: "Dancing Script";
   font-size: 1rem;
+}
+.list-3__title {
   background: -webkit-linear-gradient(-45deg, #1530b7 10%, #56a7e6 60%, #56a7e6 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -750,6 +756,8 @@ body {
 .list-4__header {
   font-family: "Kaushan Script";
   font-size: 1rem;
+}
+.list-4__title {
   background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

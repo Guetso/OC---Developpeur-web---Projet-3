@@ -1,219 +1,221 @@
 // Police des menus la page accueil
 
 @mixin menu__titre--font($num-menu, $num-font, $font-size, $font-weight) {
-    .menu__titre {
-      &-#{$num-menu} {
-        font-family: map-get($map: $font-menu__titre, $key: $num-font);
-        font-size: $font-size;
-        font-weight: $font-weight;
-        @media all and (min-width: 1023px) {
-          font-size: $font-size * 1.8;
-        }
-        @media all and (min-height: 1000px) {
-          font-size: $font-size * 1.5;
-        }
-        @media all and (min-width: 1017px) and (min-height: 1000px) {
-          font-size: $font-size * 2.5;
-        }
-        @media all and (min-width: 1017px) and (min-height: 1200px) {
-          font-size: $font-size * 3;
-        }
+  .menu__titre {
+    &-#{$num-menu} {
+      font-family: map-get($map: $font-menu__titre, $key: $num-font);
+      font-size: $font-size;
+      font-weight: $font-weight;
+      @media all and (min-width: 1023px) {
+        font-size: $font-size * 1.8;
+      }
+      @media all and (min-height: 1000px) {
+        font-size: $font-size * 1.5;
+      }
+      @media all and (min-width: 1017px) and (min-height: 1000px) {
+        font-size: $font-size * 2.5;
+      }
+      @media all and (min-width: 1017px) and (min-height: 1200px) {
+        font-size: $font-size * 3;
       }
     }
   }
-  
-  @mixin menu__menu--font($num-menu, $font-menu__menu, $font-size, $font-weight, $font-style) {
-    .menu__menu {
-      &-#{$num-menu} {
-        font-family: $font-menu__menu;
-        font-size: $font-size;
-        font-weight: $font-weight;
-        font-style: $font-style;
-        @media all and (min-width: 1023px) {
-          font-size: $font-size * 1.8;
-        }
-        @media all and (min-height: 1000px) {
-          font-size: $font-size * 1.5;
-        }
-        @media all and (min-width: 1017px) and (min-height: 1000px) {
-          font-size: $font-size * 2;
-        }
-        @media all and (min-width: 1017px) and (min-height: 1200px) {
-          font-size: $font-size * 2.5;
-        }
+}
+
+@mixin menu__menu--font($num-menu, $font-menu__menu, $font-size, $font-weight, $font-style) {
+  .menu__menu {
+    &-#{$num-menu} {
+      font-family: $font-menu__menu;
+      font-size: $font-size;
+      font-weight: $font-weight;
+      font-style: $font-style;
+      @media all and (min-width: 1023px) {
+        font-size: $font-size * 1.8;
+      }
+      @media all and (min-height: 1000px) {
+        font-size: $font-size * 1.5;
+      }
+      @media all and (min-width: 1017px) and (min-height: 1000px) {
+        font-size: $font-size * 2;
+      }
+      @media all and (min-width: 1017px) and (min-height: 1200px) {
+        font-size: $font-size * 2.5;
       }
     }
   }
-  
-  // Police des pages "restaurant" :
-  
-  @mixin list-font(
-    $num-menu,
-    $num-font1,
-    $num-font2,
-    $size-title-font,
-    $size-ul-font,
-    $color1-title,
-    $color2-title,
-    $color3-title,
-    $color1,
-    $color2,
-    $color3,
-    $color-bar1,
-    $color-bar2,
-    $color-bar3
-  ) {
-    .list {
-      &-#{$num-menu} {
+}
+
+// Police des pages "restaurant" :
+
+@mixin list-font(
+  $num-menu,
+  $num-font1,
+  $num-font2,
+  $size-title-font,
+  $size-ul-font,
+  $color1-title,
+  $color2-title,
+  $color3-title,
+  $color1,
+  $color2,
+  $color3,
+  $color-bar1,
+  $color-bar2,
+  $color-bar3
+) {
+  .list {
+    &-#{$num-menu} {
+      &__header {
+        font-family: map-get($map: $font-menu__titre, $key: $num-font1);
+        font-size: $size-title-font;
+      }
+      &__title {
+        background: -webkit-linear-gradient(
+          -45deg,
+          map-get($map: $color1-menu__titre, $key: $color1-title) 10%,
+          map-get($map: $color2-menu__titre, $key: $color2-title) 60%,
+          map-get($map: $color3-menu__titre, $key: $color3-title) 80%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      h3 {
+        font-weight: normal;
+      }
+      &__step {
+        h4 {
+          font-family: map-get($map: $font-list, $key: $num-font2);
+          font-size: 0.8rem;
+        }
+      }
+      article {
+        ul {
+          font-family: map-get($map: $font-list, $key: $num-font2);
+          font-size: $size-ul-font;
+        }
+        //Dans le cas où la couleur des plats sur les menus, ainsi que leurs titres (entrées,plats,desserts), correspondent aux trois couleurs composant le titre du menu (cf."le chic à la française")
+        &:nth-of-type(1) {
+          ul {
+            color: map-get($map: $color1-menu__titre, $key: $color1);
+          }
+        }
+        &:nth-of-type(2) {
+          ul {
+            color: map-get($map: $color2-menu__titre, $key: $color2);
+          }
+        }
+        &:nth-of-type(3) {
+          ul {
+            color: map-get($map: $color3-menu__titre, $key: $color3);
+          }
+        }
+        &:nth-of-type(1) {
+          h4 {
+            color: map-get($map: $color1-menu__titre, $key: $color1);
+            &::after {
+              color: map-get($map: $color1-menu__titre, $key: $color-bar1);
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          h4 {
+            color: map-get($map: $color2-menu__titre, $key: $color2);
+            &::after {
+              color: map-get($map: $color2-menu__titre, $key: $color-bar2);
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          h4 {
+            color: map-get($map: $color3-menu__titre, $key: $color3);
+            &::after {
+              color: map-get($map: $color3-menu__titre, $key: $color-bar3);
+            }
+          }
+        }
+      }
+      .price {
+        font-weight: bold;
+      }
+      &__footer {
+        //le footer ne concerne pour le moment que la carte de "La note enchantée"
+        font-family: map-get($map: $font-menu__titre, $key: $num-font1);
+        font-size: 1.1rem;
+      }
+
+      // MEDIA QUERIES ---------------------------------
+
+      @media all and (min-width: 1440px) {
         &__header {
-          font-family: map-get($map: $font-menu__titre, $key: $num-font1);
-          font-size: $size-title-font;
-          background: -webkit-linear-gradient(
-            -45deg,
-            map-get($map: $color1-menu__titre, $key: $color1-title) 10%,
-            map-get($map: $color2-menu__titre, $key: $color2-title) 60%,
-            map-get($map: $color3-menu__titre, $key: $color3-title) 80%
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-        h3 {
-          font-weight: normal;
+          font-size: 2.2rem;
         }
         &__step {
           h4 {
-            font-family: map-get($map: $font-list, $key: $num-font2);
-            font-size: 0.8rem;
+            font-size: 1.4rem;
           }
         }
         article {
           ul {
-            font-family: map-get($map: $font-list, $key: $num-font2);
-            font-size: $size-ul-font;
+            font-size: 2 * $size-ul-font;
           }
-          //Dans le cas où la couleur des plats sur les menus, ainsi que leurs titres (entrées,plats,desserts), correspondent aux trois couleurs composant le titre du menu (cf."le chic à la française")
-          &:nth-of-type(1) {
-            ul {
-              color: map-get($map: $color1-menu__titre, $key: $color1);
-            }
-          }
-          &:nth-of-type(2) {
-            ul {
-              color: map-get($map: $color2-menu__titre, $key: $color2);
-            }
-          }
-          &:nth-of-type(3) {
-            ul {
-              color: map-get($map: $color3-menu__titre, $key: $color3);
-            }
-          }
-          &:nth-of-type(1) {
-            h4 {
-              color: map-get($map: $color1-menu__titre, $key: $color1);
-              &::after {
-                color: map-get($map: $color1-menu__titre, $key: $color-bar1);
-              }
-            }
-          }
-          &:nth-of-type(2) {
-            h4 {
-              color: map-get($map: $color2-menu__titre, $key: $color2);
-              &::after {
-                color: map-get($map: $color2-menu__titre, $key: $color-bar2);
-              }
-            }
-          }
-          &:nth-of-type(3) {
-            h4 {
-              color: map-get($map: $color3-menu__titre, $key: $color3);
-              &::after {
-                color: map-get($map: $color3-menu__titre, $key: $color-bar3);
-              }
-            }
-          }
-        }
-        .price {
-          font-weight: bold;
         }
         &__footer {
-          //le footer ne concerne pour le moment que la carte de "La note enchantée"
-          font-family: map-get($map: $font-menu__titre, $key: $num-font1);
-          font-size: 1.1rem;
+          font-size: 2rem;
         }
-  
-        // MEDIA QUERIES ---------------------------------
-  
-        @media all and (min-width: 1440px) {
-          &__header {
-            font-size: 2.2rem;
-          }
-          &__step {
-            h4 {
-              font-size: 1.4rem;
-            }
-          }
-          article {
-            ul {
-              font-size: 2 * $size-ul-font;
-            }
-          }
-          &__footer {
-            font-size: 2rem;
-          }
+      }
+
+      @media all and (min-width: 1024px) and (max-width: 1439px) {
+        &__header {
+          font-size: 2rem;
         }
-  
-        @media all and (min-width: 1024px) and (max-width: 1439px) {
-          &__header {
-            font-size: 2rem;
-          }
-          &__step {
-            h4 {
-              font-size: 1.4rem;
-            }
-          }
-          article {
-            ul {
-              font-size: 1.8 * $size-ul-font;
-            }
-          }
-          &__footer {
-            font-size: 2rem;
-          }
-        }
-  
-        @media all and (min-width: 768px) and (max-width: 1023px) {
-          &__header {
-            font-size: 1.5rem;
-          }
-          &__step {
-            h4 {
-              font-size: 1.2rem;
-            }
-          }
-          article {
-            ul {
-              font-size: 1.4 * $size-ul-font;
-            }
-          }
-          &__footer {
+        &__step {
+          h4 {
             font-size: 1.4rem;
           }
         }
-        @media all and (max-width: 767px) {
-          &__header {
-            font-size: $size-title-font/1;
-          }
-          article {
-            ul {
-              font-size: 1.5 * $size-ul-font;
-            }
+        article {
+          ul {
+            font-size: 1.8 * $size-ul-font;
           }
         }
-        @media all and (max-width: 360px) {
-          &__header {
-            font-size: $size-title-font/1.25;
+        &__footer {
+          font-size: 2rem;
+        }
+      }
+
+      @media all and (min-width: 768px) and (max-width: 1023px) {
+        &__header {
+          font-size: 1.5rem;
+        }
+        &__step {
+          h4 {
+            font-size: 1.2rem;
           }
+        }
+        article {
+          ul {
+            font-size: 1.4 * $size-ul-font;
+          }
+        }
+        &__footer {
+          font-size: 1.4rem;
+        }
+      }
+      @media all and (max-width: 767px) {
+        &__header {
+          font-size: $size-title-font/1;
+        }
+        article {
+          ul {
+            font-size: 1.5 * $size-ul-font;
+          }
+        }
+      }
+      @media all and (max-width: 360px) {
+        &__header {
+          font-size: $size-title-font/1.25;
         }
       }
     }
   }
+}
