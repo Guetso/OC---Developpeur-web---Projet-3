@@ -1,3 +1,20 @@
+.conteneur{
+  min-height: 84.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.center_page {
+  order: 1; // selon le html l'élément ".center_page" est placé en 2nd position après "soon". On le remet ici en 1er (le titre de la section se trouve donc en bas de section)
+  display: flex;
+  min-height: 74.5%;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
 #section_menu { //Présentations des carte de l'accueil, élément du conteneur "center_page"
   display: flex;
   flex-flow: row wrap;
@@ -7,8 +24,10 @@
 }
 
 #soon { //conteneur du bouton "Prochainement" de la page d'acceuil
+  order:2; // selon le html l'élément "soon" est placé en 1er à des fins de logique sémantique ("soon" contient un "h2", titre de la section)
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10%;
+  min-height: 10%;
+  padding: 2% 0 2% 0;
 }
