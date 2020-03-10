@@ -10,6 +10,8 @@
   //N° de la police des plats
     1.3rem,
   //Taille de la police du titre
+    0.8rem,
+  //Taille de la police du titre
     0.6rem,
   //Taille de la police des plats
     1,
@@ -32,10 +34,10 @@
 );
 
 @include list(2, 2);
-@include list-font(2, 2, 2, 1rem, 0.8rem, 2, 2, 2, 2, 2, 2, 2, 2, 2);
+@include list-font(2, 2, 2, 1rem, 0.8rem, 0.8rem, 2, 2, 2, 2, 2, 2, 2, 2, 2);
 
 @include list(3, 3);
-@include list-font(3, 3, 3, 1rem, 0.8rem, 3, 3, 3, black, black, black, 3, 3, 3);
+@include list-font(3, 3, 3, 1rem, 1rem, 0.8rem, 3, 3, 3, black, black, black, 3, 3, 3);
 
 @include list(4, 4);
-@include list-font(4, 4, 4, 1rem, 0.8rem, 4, 4, 4, black, black, black, 4, 4, 4);
+@include list-font(4, 4, 4, 1rem, 1rem, 0.8rem, 4, 4, 4, black, black, black, 4, 4, 4);

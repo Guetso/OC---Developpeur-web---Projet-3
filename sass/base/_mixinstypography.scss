@@ -52,6 +52,7 @@
   $num-font1,
   $num-font2,
   $size-title-font,
+  $size-step-font,
   $size-ul-font,
   $color1-title,
   $color2-title,
@@ -85,7 +86,7 @@
       &__step {
         h4 {
           font-family: map-get($map: $font-list, $key: $num-font2);
-          font-size: 0.8rem;
+          font-size: $size-step-font;
         }
       }
       article {
@@ -147,11 +148,11 @@
 
       @media all and (min-width: 1440px) {
         &__header {
-          font-size: 2.2rem;
+          font-size: $size-title-font*2.2;
         }
         &__step {
           h4 {
-            font-size: 1.4rem;
+            font-size: $size-step-font*1.75;
           }
         }
         article {
@@ -166,11 +167,11 @@
 
       @media all and (min-width: 1024px) and (max-width: 1439px) {
         &__header {
-          font-size: 2rem;
+          font-size: $size-title-font*2;
         }
         &__step {
           h4 {
-            font-size: 1.4rem;
+            font-size: $size-step-font*1.75;
           }
         }
         article {
@@ -185,11 +186,11 @@
 
       @media all and (min-width: 768px) and (max-width: 1023px) {
         &__header {
-          font-size: 1.5rem;
+          font-size: $size-title-font*1.5;
         }
         &__step {
           h4 {
-            font-size: 1.2rem;
+            font-size: $size-step-font*1.5;
           }
         }
         article {

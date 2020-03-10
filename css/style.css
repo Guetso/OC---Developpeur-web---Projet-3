@@ -485,7 +485,7 @@ body {
 }
 @media all and (min-width: 1440px) {
   .list-1__header {
-    font-size: 2.2rem;
+    font-size: 2.86rem;
   }
   .list-1__step h4 {
     font-size: 1.4rem;
@@ -499,7 +499,7 @@ body {
 }
 @media all and (min-width: 1024px) and (max-width: 1439px) {
   .list-1__header {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
   .list-1__step h4 {
     font-size: 1.4rem;
@@ -513,7 +513,7 @@ body {
 }
 @media all and (min-width: 768px) and (max-width: 1023px) {
   .list-1__header {
-    font-size: 1.5rem;
+    font-size: 1.95rem;
   }
   .list-1__step h4 {
     font-size: 1.2rem;
@@ -671,7 +671,7 @@ body {
 }
 .list-3__step h4 {
   font-family: "Caveat";
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .list-3 article ul {
   font-family: "Caveat";
@@ -698,7 +698,7 @@ body {
     font-size: 2.2rem;
   }
   .list-3__step h4 {
-    font-size: 1.4rem;
+    font-size: 1.75rem;
   }
   .list-3 article ul {
     font-size: 1.6rem;
@@ -712,7 +712,7 @@ body {
     font-size: 2rem;
   }
   .list-3__step h4 {
-    font-size: 1.4rem;
+    font-size: 1.75rem;
   }
   .list-3 article ul {
     font-size: 1.44rem;
@@ -726,7 +726,7 @@ body {
     font-size: 1.5rem;
   }
   .list-3__step h4 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .list-3 article ul {
     font-size: 1.12rem;
@@ -767,7 +767,7 @@ body {
 }
 .list-4__step h4 {
   font-family: "Caveat";
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .list-4 article ul {
   font-family: "Caveat";
@@ -794,7 +794,7 @@ body {
     font-size: 2.2rem;
   }
   .list-4__step h4 {
-    font-size: 1.4rem;
+    font-size: 1.75rem;
   }
   .list-4 article ul {
     font-size: 1.6rem;
@@ -808,7 +808,7 @@ body {
     font-size: 2rem;
   }
   .list-4__step h4 {
-    font-size: 1.4rem;
+    font-size: 1.75rem;
   }
   .list-4 article ul {
     font-size: 1.44rem;
@@ -822,7 +822,7 @@ body {
     font-size: 1.5rem;
   }
   .list-4__step h4 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .list-4 article ul {
     font-size: 1.12rem;
