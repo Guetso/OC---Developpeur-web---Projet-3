@@ -22,10 +22,10 @@
   }
 }
 
-@mixin menu__menu--font($num-menu, $font-menu__menu, $font-size, $font-weight, $font-style) {
+@mixin menu__menu--font($num-menu, $num-font, $font-size, $font-weight, $font-style) {
   .menu__menu {
     &-#{$num-menu} {
-      font-family: $font-menu__menu;
+      font-family: map-get($font-menu__menu, $num-font);
       font-size: $font-size;
       font-weight: $font-weight;
       font-style: $font-style;

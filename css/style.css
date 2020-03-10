@@ -198,7 +198,7 @@ body {
 }
 
 .menu__menu-1 {
-  font-family: 1;
+  font-family: "Itim";
   font-size: 1.1rem;
   font-weight: 400;
   font-style: italic;
@@ -265,7 +265,7 @@ body {
 }
 
 .menu__menu-2 {
-  font-family: 2;
+  font-family: "Abril Fatface";
   font-size: 1.1rem;
   font-weight: 400;
   font-style: normal;
@@ -332,7 +332,7 @@ body {
 }
 
 .menu__menu-3 {
-  font-family: 3;
+  font-family: "Chilanka";
   font-size: 1.1rem;
   font-weight: 400;
   font-style: normal;
@@ -399,7 +399,7 @@ body {
 }
 
 .menu__menu-4 {
-  font-family: 4;
+  font-family: "Chilanka";
   font-size: 1.1rem;
   font-weight: 400;
   font-style: normal;
