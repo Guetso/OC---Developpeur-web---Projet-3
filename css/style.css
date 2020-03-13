@@ -55,6 +55,11 @@ body {
     font-size: 1.6rem;
   }
 }
+@media all and (max-width: 200px) {
+  .btn h2 {
+    font-size: 0.9rem;
+  }
+}
 .btn--anim div {
   font-size: 7rem;
 }
@@ -74,6 +79,12 @@ body {
   height: 32px;
   max-height: 100%;
   border-radius: 0.5rem;
+}
+@media all and (max-width: 200px) {
+  .btn {
+    width: 140px;
+    height: 32px;
+  }
 }
 @media all and (min-width: 901px) {
   .btn--anim {
@@ -132,6 +143,13 @@ body {
     animation-delay: 900ms, 1900ms;
     left: 30%;
   }
+}
+@media all and (max-width: 900px) and (max-width: 200px) {
+  .btn .dot--1 {
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 900px) {
   .btn .dot--2 {
     transform: translateY(-19%);
     font-size: 3.5rem;
@@ -139,12 +157,24 @@ body {
     animation-delay: 1200ms, 2000ms;
     left: 45%;
   }
+}
+@media all and (max-width: 900px) and (max-width: 200px) {
+  .btn .dot--2 {
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 900px) {
   .btn .dot--3 {
     transform: translateY(-19%);
     font-size: 3.5rem;
     animation: points1mob 900ms both, points2mob 600ms infinite;
     animation-delay: 1500ms, 2100ms;
     left: 60%;
+  }
+}
+@media all and (max-width: 900px) and (max-width: 200px) {
+  .btn .dot--3 {
+    font-size: 2rem;
   }
 }
 
@@ -1299,22 +1329,22 @@ body {
 }
 @keyframes points1mob {
   0% {
-    transform: translate(140px, -26%);
+    transform: translate(55px, -26%);
     opacity: 0;
     animation-timing-function: ease-in;
   }
   17% {
-    transform: translate(93px, -26%);
+    transform: translate(36px, -26%);
     opacity: 0;
     animation-timing-function: linear;
   }
   34% {
-    transform: translate(47px, -19%);
+    transform: translate(18px, -19%);
     opacity: 0;
     animation-timing-function: linear;
   }
   51% {
-    transform: translate(15px, -26%);
+    transform: translate(8px, -26%);
     opacity: 0.5;
     animation-timing-function: linear;
   }

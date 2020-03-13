@@ -43,6 +43,9 @@ body {
     @media all and (min-width: 1017px) and (min-height: 1000px) {
       font-size: 1.6rem;
     }
+    @media all and (max-width: 200px) {
+      font-size: 0.9rem;
+    }
   }
   &--anim {
     div {
