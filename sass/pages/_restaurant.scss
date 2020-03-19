@@ -96,7 +96,6 @@
 
   @media all and (min-width: 1440px) {
     width: 50rem;
-    height: 72rem;
     padding-left: 5rem;
     padding-right: 5rem;
     article {
@@ -126,7 +125,6 @@
 
   @media all and (min-width: 1024px) and (max-width: 1439px) {
     width: 50rem;
-    height: 72rem;
     padding-left: 5rem;
     padding-right: 5rem;
     article {
@@ -156,7 +154,6 @@
 
   @media all and (min-width: 768px) and (max-width: 1023px) {
     width: 27rem;
-    height: 47rem;
     padding-left: 5rem;
     padding-right: 5rem;
     article {
@@ -216,7 +213,7 @@
       flex-direction: column;
       img {
         width: 1.5rem;
-        transform: translate(1.3rem,1rem);
+        transform: translate(1.3rem, 1rem);
       }
     }
   }
