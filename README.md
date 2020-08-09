@@ -22,6 +22,11 @@ La maquette est fournie dans le cadre de ce projet :
 * Assurer la cohérence graphique d'un site web
 * Mettre en place une structure de navigation pour un site web
 
+### Site web statique :
+
+Pour explorer le site, rendez vous simplement [ici](https://www.hugohemon.fr/projet3/)
+
+
 ### Procédure ajout d'un menu
 - 
     - Créer sa page html en y inscrivant le numéro correspondant dans les classes.
